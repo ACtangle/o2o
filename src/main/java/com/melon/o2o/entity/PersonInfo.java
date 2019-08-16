@@ -1,5 +1,7 @@
 package com.melon.o2o.entity;
 
+import lombok.Data;
+
 import java.util.Date;
 
 /**
@@ -9,7 +11,7 @@ import java.util.Date;
  * @Date 2019-08-13 01:51
  * @Version
  */
-
+@Data
 public class PersonInfo {
     // ID
     private Long userId;

@@ -1,5 +1,7 @@
 package com.melon.o2o.entity;
 
+import lombok.Data;
+
 import java.util.Date;
 import java.util.List;
 
@@ -10,7 +12,7 @@ import java.util.List;
  * @Date 2019-08-16 16:22
  * @Version
  */
-
+@Data
 public class Product {
 
     private Long productId;

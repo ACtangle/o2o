@@ -1,5 +1,7 @@
 package com.melon.o2o.entity;
 
+import lombok.Data;
+
 import java.io.Serializable;
 import java.util.Date;
 
@@ -10,7 +12,7 @@ import java.util.Date;
  * @Date 2019-08-13 01:30
  * @Version
  */
-
+@Data
 public class Area {
     // ID
     private Integer areaId;
@@ -26,6 +28,7 @@ public class Area {
 
     // 更新时间
     private Date lastEditTime;
+
 
     public Integer getAreaId() {
         return areaId;
