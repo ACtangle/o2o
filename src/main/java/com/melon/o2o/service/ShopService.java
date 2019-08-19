@@ -5,6 +5,7 @@ import com.melon.o2o.entity.Shop;
 import org.springframework.web.multipart.commons.CommonsMultipartFile;
 
 import java.io.File;
+import java.io.InputStream;
 
 /**
  * @ClassName ShopServiceImpl
@@ -17,6 +18,6 @@ import java.io.File;
 
 public interface ShopService {
 
-    ShopExecution addShop(Shop shop, CommonsMultipartFile shopImg);
+    ShopExecution addShop(Shop shop, InputStream shopImgInputStream, String fileName);
 }
 

@@ -1,11 +1,13 @@
 package com.melon.o2o.util;
 
+import lombok.extern.slf4j.Slf4j;
 import net.coobird.thumbnailator.Thumbnails;
 import net.coobird.thumbnailator.geometry.Positions;
-import org.springframework.web.multipart.commons.CommonsMultipartFile;
 
 import javax.imageio.ImageIO;
 import java.io.File;
+import java.io.IOException;
+import java.io.InputStream;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Random;
@@ -18,30 +20,32 @@ import java.util.Random;
  * @Version
  */
 
+@Slf4j
 public class ImageUtil {
 
     private static String basePath = Thread.currentThread().getContextClassLoader().getResource("").getPath();
 
     private static final SimpleDateFormat sDateFormat = new SimpleDateFormat("yyyyMMddHHmmss");
 
-    private static final Random r = new Random();
+    private static final Random random = new Random();
 
-    public static String generateThumbnail(CommonsMultipartFile thumbnail, String targetAddr) {
-        //重新命名
+    public static String generateThumbnail(InputStream thumbnailInputStream, String fileName, String targetAddr) {
+
         String realFileName = getRandomFileName();
-        //获取文件格式
-        String extension = getFileExtension(thumbnail);
-        //创建目录
+        String extension = getFileExtension(fileName);
         makeDirPath(targetAddr);
         String relativePath = targetAddr + realFileName + extension;
+        log.debug("current complete relativeAddr is:" + relativePath);
         File dest = new File(PathUtil.getImgBasePath() + relativePath);
+        log.debug("current complete addr is:" + PathUtil.getImgBasePath() + relativePath);
+        log.debug("basePath:" + basePath);
 
         try {
-            Thumbnails.of(thumbnail.getInputStream()).size(200, 200)
+            Thumbnails.of(thumbnailInputStream).size(200, 200)
                     .watermark(Positions.BOTTOM_RIGHT, ImageIO.read(new File(basePath + "/watermark.jpg")), 0.25f)
                     .outputQuality(0.8f)
                     .toFile(dest);
-        } catch (Exception e) {
+        } catch (IOException e) {
             e.printStackTrace();
         }
         return relativePath;
@@ -54,27 +58,28 @@ public class ImageUtil {
      */
     private static String getRandomFileName() {
         //获取随机五位数
-        int rannum = r.nextInt(89999) + 10000;
+        int rannum = random.nextInt(89999) + 10000;
         String nowTimeStr = sDateFormat.format(new Date());
         return nowTimeStr + rannum;
     }
 
     /**
      * 获取输入文件流的扩展名，文件格式 .jpg .png
-     * @param cFile
+     *
+     * @param fileName
      * @return
      */
-    private static String getFileExtension(CommonsMultipartFile cFile){
-        String originalFileName = cFile.getOriginalFilename();
-        return originalFileName.substring(originalFileName.lastIndexOf("."));
+    private static String getFileExtension(String fileName) {
+        return fileName.substring(fileName.lastIndexOf("."));
     }
 
     /**
      * 创建目标路径所涉及的目录，即/Users/melon/Pictures/o2o/xxx.jpg
      * 所有的文件夹都应该有
+     *
      * @param targetAddr
      */
-    private static void makeDirPath( String targetAddr){
+    private static void makeDirPath(String targetAddr) {
         String realFileParentPath = PathUtil.getImgBasePath() + targetAddr;
         File dirPath = new File(realFileParentPath);
         if (!dirPath.exists()) {

@@ -1,16 +1,18 @@
 package com.melon.o2o.service;
 
 import com.melon.o2o.dao.BaseTest;
+import com.melon.o2o.dto.ShopExecution;
 import com.melon.o2o.entity.Area;
 import com.melon.o2o.entity.PersonInfo;
 import com.melon.o2o.entity.Shop;
 import com.melon.o2o.entity.ShopCategory;
 import com.melon.o2o.enums.ShopStateEnum;
+import com.melon.o2o.exceptions.ShopOperationException;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.multipart.commons.CommonsMultipartFile;
 
-import java.io.File;
+import java.io.*;
 import java.util.Date;
 
 import static org.junit.Assert.*;
@@ -22,7 +24,7 @@ public class ShopServiceTest extends BaseTest {
 
 
     @Test
-    public void addShop() {
+    public void addShop() throws ShopOperationException, FileNotFoundException {
         Shop shop = new Shop();
         PersonInfo owner = new PersonInfo();
         Area area = new Area();
@@ -33,14 +35,18 @@ public class ShopServiceTest extends BaseTest {
         shop.setOwner(owner);
         shop.setArea(area);
         shop.setShopCategory(shopCategory);
-        shop.setShopName("测试的店铺1");
-        shop.setShopDesc("test1");
-        shop.setShopAddr("test1");
-        shop.setPhone("test1");
+        shop.setShopName("测试的店铺3");
+        shop.setShopDesc("test3");
+        shop.setShopAddr("test3");
+        shop.setPhone("test3");
         shop.setCreateTime(new Date());
         shop.setEnableStatus(ShopStateEnum.CHECK.getState());
         shop.setAdvice("审核中");
 ///Users/melon/Pictures/desktopImage/IMG_0077.jpg
-//        CommonsMultipartFile file = new CommonsMultipartFile("/Users/melon/Pictures/desktopImage")
+        File shopImg = new File("/Users/melon/Pictures/desktopImage/IMG_0077.jpg");
+        InputStream inputStream = new FileInputStream(shopImg);
+        ShopExecution shopExecution = shopService.addShop(shop, inputStream, shopImg.getName());
+        assertEquals(ShopStateEnum.CHECK.getState(),shopExecution.getState());
+
     }
 }
