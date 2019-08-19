@@ -10,7 +10,7 @@ import com.melon.o2o.enums.ShopStateEnum;
 import com.melon.o2o.exceptions.ShopOperationException;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.multipart.commons.CommonsMultipartFile;
+
 
 import java.io.*;
 import java.util.Date;

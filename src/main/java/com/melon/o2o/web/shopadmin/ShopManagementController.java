@@ -3,10 +3,14 @@ package com.melon.o2o.web.shopadmin;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.melon.o2o.dto.ShopExecution;
+import com.melon.o2o.entity.Area;
 import com.melon.o2o.entity.PersonInfo;
 import com.melon.o2o.entity.Shop;
+import com.melon.o2o.entity.ShopCategory;
 import com.melon.o2o.enums.ShopStateEnum;
 import com.melon.o2o.exceptions.ShopOperationException;
+import com.melon.o2o.service.AreaService;
+import com.melon.o2o.service.ShopCategoryService;
 import com.melon.o2o.service.ShopService;
 import com.melon.o2o.util.HttpServletRequestUtil;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,7 +24,9 @@ import org.springframework.web.multipart.commons.CommonsMultipartResolver;
 
 import javax.servlet.http.HttpServletRequest;
 import java.io.*;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -37,6 +43,31 @@ public class ShopManagementController {
 
     @Autowired
     private ShopService shopService;
+
+    @Autowired
+    private ShopCategoryService shopCategoryService;
+
+    @Autowired
+    private AreaService areaService;
+
+    @RequestMapping(value ="getshopinitinfo" ,method = RequestMethod.GET)
+    @ResponseBody
+    private Map<String, Object>getShopInitInfo(){
+        Map<String,Object> modelMap = new HashMap<String,Object>();
+        List<ShopCategory> shopCategoryList = new ArrayList<ShopCategory>();
+        List<Area> areaList = new ArrayList<Area>();
+        try {
+            shopCategoryList = shopCategoryService.getShopCategoryList(new ShopCategory());
+            areaList = areaService.getAreaList();
+            modelMap.put("shopCategoryList",shopCategoryList);
+            modelMap.put("areaList",areaList);
+            modelMap.put("success",true);
+        }catch (Exception e){
+            modelMap.put("success",false);
+            modelMap.put("errMsg",e.getMessage());
+        }
+        return modelMap;
+    }
 
     @RequestMapping(value = "/registershop",method = RequestMethod.POST)
     @ResponseBody
@@ -94,29 +125,5 @@ public class ShopManagementController {
     }
 
 
-//    private static void inputStreamToFile(InputStream inputStream, File file){
-//        FileOutputStream outputStream = null;
-//        try{
-//            outputStream = new FileOutputStream(file);
-//            int bytesRead = 0;
-//            byte[] buffer = new byte[1024];
-//            while ((bytesRead = inputStream.read(buffer)) != -1) {
-//                outputStream.write(buffer,0,bytesRead);
-//            }
-//        }catch (Exception e){
-//            throw new RuntimeException("调用inputStreamToFile产生异常：" + e.getMessage());
-//        }finally {
-//            try {
-//                if (outputStream != null){
-//                    outputStream.close();
-//                }
-//                if (inputStream != null){
-//                    inputStream.close();
-//                }
-//            }catch (IOException e){
-//                throw new RuntimeException("调用inputStreamToFile关闭io产生异常：" + e.getMessage());
-//            }
-//        }
-//    }
 
 }

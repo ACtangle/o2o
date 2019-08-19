@@ -51,7 +51,7 @@ public class ShopServiceImpl implements ShopService {
                 if (shopImgInputStream != null) {
                     //存储图片
                     try {
-                        addShopImg(shop, shopImgInputStream,fileName);
+                        addShopImg(shop, shopImgInputStream, fileName);
                     } catch (Exception e) {
                         throw new ShopOperationException("addShopImg error:" + e.getMessage());
                     }
@@ -65,13 +65,13 @@ public class ShopServiceImpl implements ShopService {
         } catch (Exception e) {
             throw new ShopOperationException("addShop error:" + e.getMessage());
         }
-        return new ShopExecution(ShopStateEnum.CHECK,shop);
+        return new ShopExecution(ShopStateEnum.CHECK, shop);
     }
 
     private void addShopImg(Shop shop, InputStream shopImgInputStream, String fileName) {
         //获取shop图片目录的相对值路径
         String dest = PathUtil.getShopImagePath(shop.getShopId());
-        String shopImgAddr = ImageUtil.generateThumbnail(shopImgInputStream,fileName,dest);
+        String shopImgAddr = ImageUtil.generateThumbnail(shopImgInputStream, fileName, dest);
         shop.setShopImg(shopImgAddr);
     }
 
