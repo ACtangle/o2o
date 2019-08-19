@@ -32,7 +32,9 @@ public class Shop {
 
     private Date lastEditTime;
 
-    //-1:不可用，0：审核中，1：可用
+    /**
+     * -1:不可用，0：审核中，1：可用
+     */
     private Integer enableStatus;
 
     private String advice;
