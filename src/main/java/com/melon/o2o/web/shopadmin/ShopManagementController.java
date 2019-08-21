@@ -108,9 +108,10 @@ public class ShopManagementController {
             owner.setUserId(1L);
             shop.setOwner(owner);
             try {
-                ShopExecution shopExecution = shopService.addShop(shop, shopImg.getInputStream(), shopImg.getOriginalFilename());
               InputStream inputStream = shopImg.getInputStream();
               String fileName = shopImg.getOriginalFilename();
+                ShopExecution shopExecution = shopService.addShop(shop, inputStream, fileName);
+
                 if (shopExecution.getState() == ShopStateEnum.CHECK.getState()) {
                     modelMap.put("success", true);
                 } else {

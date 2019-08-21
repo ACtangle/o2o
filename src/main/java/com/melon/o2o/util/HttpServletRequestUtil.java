@@ -63,7 +63,7 @@ public class HttpServletRequestUtil {
         }
     }
 
-    public static String getStringFromMap(HttpServletRequest request, String key, int index) {
+    public static String getStringFromMapByIndex(HttpServletRequest request, String key, int index) {
         try {
             Map map = request.getParameterMap();
             String[] stringArray = (String[]) map.get(key);

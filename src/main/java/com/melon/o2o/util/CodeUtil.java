@@ -19,7 +19,7 @@ public class CodeUtil {
         //获取图片内kaptcha的验证码
         String verifyCodeExpected = (String) request.getSession().getAttribute(Constants.KAPTCHA_SESSION_KEY);
         //获取表单内传递过来的验证码
-        String verifyCodeActual = HttpServletRequestUtil.getStringFromMap(request,"verifyCodeActual",0);
+        String verifyCodeActual = HttpServletRequestUtil.getStringFromMapByIndex(request,"verifyCodeActual",0);
         //比较
         if (verifyCodeActual == null || !verifyCodeActual.equals(verifyCodeExpected)) {
             return false;
