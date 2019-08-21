@@ -24,7 +24,7 @@ $(function () {
             }
         });
 
-        $('submit').click(function () {
+        $('#submit').click(function () {
             //获取表单信息
             var shop = {};
             shop.shopName = $('#shop-name').val();
@@ -47,9 +47,16 @@ $(function () {
             var formData = new FormData();
             formData.append('shopImg',shopImg);
             formData.append('shopStr',JSON.stringify(shop));
+            var verifyCodeActual = $('#j_captcha').val();
+            if(!verifyCodeActual){
+                $.toast("请输入验证码");
+                return;
+            }
+            formData.append('verifyCodeActual',verifyCodeActual);
             $.ajax({
                 url: registerShopUrl,
-                type: post,
+                type: 'POST',
+                dataType: 'json',
                 data: formData,
                 contentType: false,
                 processData: false,
@@ -58,8 +65,9 @@ $(function () {
                     if (data.success){
                         $.toast('提交成功');
                     }else{
-                        $.toast('提交失败:' + data.errMsg);
+                        $.toast('提交失败:' + data.errorMsg);
                     }
+                    $('#captcha_img').click();
                 }
             });
         });

@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>SUI Mobile Demo</title>
+    <title>店铺注册</title>
     <meta name="description" content="MSUI: Build mobile apps with simple HTML, CSS, and JS components.">
     <meta name="author" content="阿里巴巴国际UED前端">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1">
@@ -125,7 +125,18 @@
                         </div>
                     </li>
                     <!-- 验证码 kaptcha -->
-
+                    <li>
+                        <div class="item-content">
+                            <div class="item-inner">
+                                <div class="item-title label">验证码</div>
+                                <input type="text" id="j_captcha" placeholder="验证码">
+                                <div class="item-input">
+                                    <img id="captcha_img" alt="点击更换" title="点击更换"
+                                        onclick="changeVerifyCode(this)" src="../Kaptcha">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
 
                 </ul>
             </div>
@@ -144,5 +155,7 @@
 <script type='text/javascript' src='//g.alicdn.com/msui/sm/0.6.2/js/sm.min.js' charset='utf-8'></script>
 <script type='text/javascript' src='//g.alicdn.com/msui/sm/0.6.2/js/sm-extend.min.js' charset='utf-8'></script>
 <script type='text/javascript' src='../resources/js/shop/shopoperation.js' charset='utf-8'></script>
+<script type='text/javascript' src='../resources/js/common/common.js' charset='utf-8'></script>
+
 </body>
 </html>
