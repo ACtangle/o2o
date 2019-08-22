@@ -3,7 +3,7 @@ $(function () {
     var initUrl = '/o2o/shopadmin/getshopinitinfo';
     var registerShopUrl = '/o2o/shopadmin/registershop';
 
-    alert(initUrl);
+    // alert(initUrl);
     getShopInitInfo();
 
     function getShopInitInfo(){
@@ -65,7 +65,7 @@ $(function () {
                     if (data.success){
                         $.toast('提交成功');
                     }else{
-                        $.toast('提交失败:' + data.errorMsg);
+                        $.toast('提交失败:' + data.errMsg);
                     }
                     $('#captcha_img').click();
                 }

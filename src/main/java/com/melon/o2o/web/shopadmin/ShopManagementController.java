@@ -77,7 +77,7 @@ public class ShopManagementController {
         Map<String, Object> modelMap = new HashMap<String, Object>();
         if (!CodeUtil.checkVerifyCode(request)) {
             modelMap.put("success", false);
-            modelMap.put("errorMsg：", "输入了错误的验证码");
+            modelMap.put("errMsg：", "输入了错误的验证码");
             return modelMap;
         }
 
@@ -89,7 +89,7 @@ public class ShopManagementController {
             shop = mapper.readValue(shopStr, Shop.class);
         } catch (Exception e) {
             modelMap.put("success", false);
-            modelMap.put("errorMsg：", e.getMessage());
+            modelMap.put("errMsg：", e.getMessage());
             return modelMap;
         }
         CommonsMultipartFile shopImg = null;
@@ -99,7 +99,7 @@ public class ShopManagementController {
             shopImg = (CommonsMultipartFile) multipartHttpServletRequest.getFile("shopImg");
         } else {
             modelMap.put("success：", false);
-            modelMap.put("errorMsg", "上传图片不能为空");
+            modelMap.put("errMsg", "上传图片不能为空");
             return modelMap;
         }
         //2.注册店铺
@@ -116,19 +116,19 @@ public class ShopManagementController {
                     modelMap.put("success", true);
                 } else {
                     modelMap.put("success", false);
-                    modelMap.put("errorMsg：", shopExecution.getStateInfo());
+                    modelMap.put("errMsg：", shopExecution.getStateInfo());
                 }
             } catch (ShopOperationException e) {
                 modelMap.put("success", false);
-                modelMap.put("errorMsg：", e.getMessage());
+                modelMap.put("errMsg：", e.getMessage());
             } catch (IOException e) {
                 modelMap.put("success", false);
-                modelMap.put("errorMsg：", e.getMessage());
+                modelMap.put("errMsg：", e.getMessage());
             }
             return modelMap;
         } else {
             modelMap.put("success", false);
-            modelMap.put("errorMsg", "请输入店铺信息");
+            modelMap.put("errMsg", "请输入店铺信息");
             return modelMap;
         }
     }
