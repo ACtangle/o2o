@@ -29,17 +29,17 @@ public class ShopDaoTest extends BaseTest {
         shop.setOwner(owner);
         shop.setArea(area);
         shop.setShopCategory(shopCategory);
-        shop.setShopName("测试的店铺");
-        shop.setShopDesc("test");
-        shop.setShopAddr("test");
-        shop.setPhone("test");
-        shop.setShopImg("test");
+        shop.setShopName("测试的店铺13");
+        shop.setShopDesc("test11");
+        shop.setShopAddr("test11");
+        shop.setPhone("test11");
+        shop.setShopImg("test11");
         shop.setCreateTime(new Date());
         shop.setEnableStatus(1);
         shop.setAdvice("审核中");
 
         int result = shopDao.insertShop(shop);
-//        assertEquals(1,result);
+        assertEquals(1,result);
     }
 
     @Test

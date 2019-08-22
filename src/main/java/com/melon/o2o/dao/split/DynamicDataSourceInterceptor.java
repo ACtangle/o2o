@@ -51,7 +51,7 @@ public class DynamicDataSourceInterceptor implements Interceptor {
                 if (ms.getId().contains(SelectKeyGenerator.SELECT_KEY_SUFFIX)) {
                     lookupKey = DynamicDataSourceHolder.DB_MASTER;
                 } else {
-                    BoundSql boundSql = ms.getSqlSource().getBoundSql(objects);
+                    BoundSql boundSql = ms.getSqlSource().getBoundSql(objects[1]);
                     String sql = boundSql.getSql().toLowerCase(Locale.CHINA).replaceAll("[\\t\\n\\r]", " ");
                     if (sql.matches(REGEX)) {
                         lookupKey = DynamicDataSourceHolder.DB_MASTER;
