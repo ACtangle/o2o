@@ -22,6 +22,14 @@ public class ShopServiceTest extends BaseTest {
     @Autowired
     private ShopService shopService;
 
+    @Test
+    public void modifyShop() throws ShopOperationException,FileNotFoundException{
+        Shop shop = shopService.getByShopId(1L);
+        File shopImg = new File("/Users/melon/Pictures/desktopImage/IMG_0077.jpg");
+        InputStream inputStream = new FileInputStream(shopImg);
+        ShopExecution shopExecution = shopService.modifyShop(shop,inputStream,shopImg.getName());
+        System.out.println(shopExecution.getState());
+    }
 
     @Test
     public void addShop() throws ShopOperationException, FileNotFoundException {

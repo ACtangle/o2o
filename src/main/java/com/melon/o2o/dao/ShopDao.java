@@ -11,6 +11,14 @@ import com.melon.o2o.entity.Shop;
  */
 
 public interface ShopDao {
+
+    /**
+     * 根据id查询店铺
+     * @param shopId
+     * @return
+     */
+    Shop queryByShopId(long shopId);
+
     /**
      * 新增店铺
      * @param shop
@@ -24,4 +32,6 @@ public interface ShopDao {
      * @return int
      */
     int updateShop(Shop shop);
+
+
 }

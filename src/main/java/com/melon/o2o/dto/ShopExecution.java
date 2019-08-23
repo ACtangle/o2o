@@ -45,7 +45,7 @@ public class ShopExecution {
     }
 
     /**
-     * 店铺操作失败的时候使用的构造器
+     *
      *
      * @param stateEnum
      */
@@ -55,7 +55,7 @@ public class ShopExecution {
     }
 
     /**
-     * 店铺操作失败的时候使用的构造器
+     *
      *
      * @param stateEnum
      * @param shop
@@ -68,7 +68,7 @@ public class ShopExecution {
 
 
     /**
-     * 店铺操作失败的时候使用的构造器
+     *
      *
      * @param stateEnum
      * @param shopList
