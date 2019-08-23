@@ -24,7 +24,7 @@ $(function () {
                 $('#shop-addr').val(shop.shopAddr);
                 $('#shop-phone').val(shop.phone);
                 $('#shop-desc').val(shop.shopDesc);
-                var shopCategory = '<option data-id "' +
+                var shopCategory = '<option data-id= "' +
                     shop.shopCategory.shopCategoryId + '" selected>' +
                     shop.shopCategory.shopCategoryName + '</option>';
                 var tempAreaHtml = '';
