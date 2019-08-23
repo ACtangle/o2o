@@ -8,14 +8,9 @@
   <component name="ChangeListManager">
     <list default="true" id="a705bae2-ed2a-43a9-b547-d715424f3272" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/melon/o2o/dao/ShopDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/melon/o2o/dao/ShopDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/melon/o2o/dto/ShopExecution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/melon/o2o/dto/ShopExecution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/melon/o2o/service/ShopService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/melon/o2o/service/ShopService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/melon/o2o/service/imp/ShopServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/melon/o2o/service/imp/ShopServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/melon/o2o/util/ImageUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/melon/o2o/util/ImageUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/ShopDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/ShopDao.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/test/com/melon/o2o/dao/ShopDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/test/com/melon/o2o/dao/ShopDaoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/test/com/melon/o2o/service/ShopServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/test/com/melon/o2o/service/ShopServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/melon/o2o/web/shopadmin/ShopManagementController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/melon/o2o/web/shopadmin/ShopManagementController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/js/common/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/common/common.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/js/shop/shopoperation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/shop/shopoperation.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -31,45 +26,33 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/melon/o2o/service/ShopService.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/melon/o2o/web/shopadmin/ShopManagementController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="109">
-              <caret line="19" column="17" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
+            <state relative-caret-position="-1245">
+              <caret line="76" selection-start-line="76" selection-end-line="76" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2947#2963#0" expanded="true" />
+                <element signature="e#8261#8291#1" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/html/shop/shopoperation.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="263">
+              <caret line="64" column="61" lean-forward="true" selection-start-line="64" selection-start-column="48" selection-end-line="64" selection-end-column="61" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/test/com/melon/o2o/service/ShopServiceTest.java">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/shop/shopoperation.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="706">
-              <caret line="57" selection-start-line="57" selection-end-line="57" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/melon/o2o/service/imp/ShopServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="205">
-              <caret line="54" column="52" selection-start-line="54" selection-start-column="52" selection-end-line="54" selection-end-column="52" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#930#931#0" expanded="true" />
-                <element signature="e#958#959#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/ShopDao.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-225">
-              <caret line="44" column="46" selection-start-line="44" selection-start-column="46" selection-end-line="44" selection-end-column="46" />
+            <state relative-caret-position="131">
+              <caret line="62" column="22" selection-start-line="62" selection-start-column="22" selection-end-line="62" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -139,7 +122,6 @@
         <option value="$PROJECT_DIR$/src/main/resources/mapper/ShopcategoryDao.xml.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/com/melon/o2o/service/ShopCategoryService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/melon/o2o/service/imp/ShopCategoryServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/resources/js/common/common.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/shop/shopoperation.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/spring/spring-web.xml" />
@@ -158,8 +140,6 @@
         <option value="$PROJECT_DIR$/src/main/resources/spring/spring-dao.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/mapper/ShopCategoryDao.xml" />
         <option value="$PROJECT_DIR$/src/main/test/com/melon/o2o/dao/ShopCategoryDaoTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/melon/o2o/web/shopadmin/ShopManagementController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/resources/js/shop/shopoperation.js" />
         <option value="$PROJECT_DIR$/src/main/java/com/melon/o2o/dao/ShopDao.java" />
         <option value="$PROJECT_DIR$/src/main/test/com/melon/o2o/dao/ShopDaoTest.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mapper/ShopDao.xml" />
@@ -168,6 +148,9 @@
         <option value="$PROJECT_DIR$/src/main/java/com/melon/o2o/dto/ShopExecution.java" />
         <option value="$PROJECT_DIR$/src/main/test/com/melon/o2o/service/ShopServiceTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/melon/o2o/service/imp/ShopServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/melon/o2o/web/shopadmin/ShopManagementController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/resources/js/common/common.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/resources/js/shop/shopoperation.js" />
       </list>
     </option>
   </component>
@@ -853,7 +836,7 @@
       <workItem from="1565984274761" duration="65366000" />
       <workItem from="1566405133439" duration="8877000" />
       <workItem from="1376674026037" duration="6606000" />
-      <workItem from="1566546484797" duration="4786000" />
+      <workItem from="1566546484797" duration="12243000" />
     </task>
     <task id="LOCAL-00001" summary="创建所有实体类">
       <created>1565945360356</created>
@@ -960,13 +943,17 @@
       <option name="project" value="LOCAL" />
       <updated>1566503154851</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="完成店铺注册信息的修改接口开发">
+      <created>1566552343173</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1566552343174</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ShopServiceTest_modifyShop - 2019.08.23 at 16h 56m 02s.xml">
-      <configuration name="ShopServiceTest.modifyShop" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="ShopServiceTest_modifyShop - 2019.08.23 at 16h 57m 49s.xml">
       <configuration name="ShopServiceTest.modifyShop" configurationId="JUnit" />
     </history-entry>
@@ -994,9 +981,12 @@
     <history-entry file="ShopServiceTest_modifyShop - 2019.08.23 at 17h 11m 29s.xml">
       <configuration name="ShopServiceTest.modifyShop" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="ShopServiceTest_modifyShop - 2019.08.23 at 17h 22m 42s.xml">
+      <configuration name="ShopServiceTest.modifyShop" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="107802000" />
+    <option name="totallyTimeSpent" value="115259000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1021,7 +1011,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32970297" />
-      <window_info anchor="bottom" id="Debug" order="2" sideWeight="0.5377644" weight="0.39971346" />
+      <window_info active="true" anchor="bottom" id="Debug" order="2" sideWeight="0.53700906" visible="true" weight="0.39971346" />
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="5" sideWeight="0.49924472" weight="0.3295129" />
@@ -1032,9 +1022,9 @@
       <window_info anchor="bottom" id="Database Changes" order="10" />
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.3295129" />
       <window_info anchor="bottom" id="Application Servers" order="12" weight="0.32808024" />
-      <window_info anchor="bottom" id="Messages" order="13" sideWeight="0.49773413" weight="0.3295129" />
+      <window_info anchor="bottom" id="Messages" order="13" sideWeight="0.49697885" weight="0.3295129" />
       <window_info anchor="bottom" id="Spring" order="14" sideWeight="0.49924472" weight="0.3295129" />
-      <window_info active="true" anchor="bottom" id="Run" order="15" sideWeight="0.46223566" side_tool="true" visible="true" weight="0.39971346" />
+      <window_info anchor="bottom" id="Run" order="15" sideWeight="0.46299094" side_tool="true" weight="0.39971346" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24980143" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -1064,42 +1054,14 @@
     <MESSAGE value="单元测试dao完成" />
     <MESSAGE value="读写分离和主从同步完成，dao service 单元测试通过" />
     <MESSAGE value="修改单元测试无法读入本地图片，原因是test没有该io资源；&#10;修改前端回调参数的不匹配参数errMsg" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改单元测试无法读入本地图片，原因是test没有该io资源；&#10;修改前端回调参数的不匹配参数errMsg" />
+    <MESSAGE value="完成店铺注册信息的修改接口开发" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成店铺注册信息的修改接口开发" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/4.3.7.RELEASE/spring-core-4.3.7.RELEASE.jar!/org/springframework/util/ReflectionUtils.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="213" selection-start-line="213" selection-end-line="213" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/test-classes/watermark.jpg" />
-    <entry file="file://$USER_HOME$/Downloads/u1tigt/src/main/java/com/imooc/myo2o/util/ImageUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="26" column="79" selection-start-line="26" selection-start-column="79" selection-end-line="26" selection-end-column="79" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-jdbc/4.3.7.RELEASE/spring-jdbc-4.3.7.RELEASE.jar!/org/springframework/jdbc/datasource/lookup/AbstractRoutingDataSource.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="19" column="49" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis-spring/1.3.1/mybatis-spring-1.3.1.jar!/org/mybatis/spring/SqlSessionTemplate.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="208" column="21" lean-forward="true" selection-start-line="208" selection-start-column="21" selection-end-line="208" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.4.2/mybatis-3.4.2.jar!/org/apache/ibatis/session/defaults/DefaultSqlSession.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="244">
@@ -1331,20 +1293,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/shop/shopoperation.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-534">
-          <caret line="3" column="8" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/html/shop/shopoperation.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="424">
-          <caret line="134" column="59" lean-forward="true" selection-start-line="134" selection-start-column="59" selection-end-line="134" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/com/github/penggle/kaptcha/2.3.2/kaptcha-2.3.2.jar!/com/google/code/kaptcha/Constants.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -1359,38 +1307,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/common/common.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="62" lean-forward="true" selection-start-line="3" selection-start-column="62" selection-end-line="3" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="243">
           <caret line="60" column="21" selection-start-line="60" selection-start-column="21" selection-end-line="60" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/melon/o2o/web/shopadmin/ShopManagementController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="59" column="13" selection-start-line="59" selection-start-column="13" selection-end-line="59" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/melon/o2o/exceptions/ShopOperationException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="16" column="19" lean-forward="true" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
-          <folding>
-            <element signature="e#335#336#0" expanded="true" />
-            <element signature="e#361#362#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1442,24 +1362,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/ShopDao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-225">
-          <caret line="44" column="46" selection-start-line="44" selection-start-column="46" selection-end-line="44" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/melon/o2o/dao/ShopDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="181">
           <caret line="33" column="18" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/melon/o2o/service/ShopService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="19" column="17" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -1477,18 +1383,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/melon/o2o/service/imp/ShopServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="54" column="52" selection-start-line="54" selection-start-column="52" selection-end-line="54" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#930#931#0" expanded="true" />
-            <element signature="e#958#959#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/melon/o2o/util/ImageUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="284">
@@ -1503,11 +1397,116 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/test/com/melon/o2o/service/ShopServiceTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="706">
-          <caret line="57" selection-start-line="57" selection-end-line="57" />
+        <state relative-caret-position="94">
+          <caret line="21" column="14" lean-forward="true" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/melon/o2o/service/ShopService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="19" column="17" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/melon/o2o/service/imp/ShopServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="54" column="52" selection-start-line="54" selection-start-column="52" selection-end-line="54" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#930#931#0" expanded="true" />
+            <element signature="e#958#959#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/ShopDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-240">
+          <caret line="44" column="46" selection-start-line="44" selection-start-column="46" selection-end-line="44" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/melon/o2o/exceptions/ShopOperationException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="16" column="19" lean-forward="true" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
+          <folding>
+            <element signature="e#335#336#0" expanded="true" />
+            <element signature="e#361#362#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/src.zip!/java/io/InputStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-490">
+          <caret line="44" column="22" selection-start-line="44" selection-start-column="22" selection-end-line="44" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-databind/2.8.7/jackson-databind-2.8.7.jar!/com/fasterxml/jackson/databind/ObjectMapper.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="122" column="15" selection-start-line="122" selection-start-column="15" selection-end-line="122" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/melon/o2o/web/shopadmin/ShopAdminController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/melon/o2o/web/superadmin/AreaController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/common/common.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/html/shop/shopoperation.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="263">
+          <caret line="64" column="61" lean-forward="true" selection-start-line="64" selection-start-column="48" selection-end-line="64" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.7.RELEASE/spring-web-4.3.7.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="117" selection-start-line="117" selection-end-line="117" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/melon/o2o/web/shopadmin/ShopManagementController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1245">
+          <caret line="76" selection-start-line="76" selection-end-line="76" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2947#2963#0" expanded="true" />
+            <element signature="e#8261#8291#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/shop/shopoperation.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="62" column="22" selection-start-line="62" selection-start-column="22" selection-end-line="62" selection-end-column="22" />
         </state>
       </provider>
     </entry>
