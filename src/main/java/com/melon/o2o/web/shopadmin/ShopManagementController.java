@@ -109,12 +109,10 @@ public class ShopManagementController {
         if (null != shop && shop.getShopId() != null) {
             ShopExecution shopExecution = null;
             try {
-                InputStream inputStream = shopImg.getInputStream();
-                String fileName = shopImg.getOriginalFilename();
                 if (shopImg == null) {
                     shopExecution = shopService.modifyShop(shop, null, null);
                 } else {
-                    shopExecution = shopService.modifyShop(shop, inputStream, fileName);
+                    shopExecution = shopService.modifyShop(shop, shopImg.getInputStream(), shopImg.getOriginalFilename());
                 }
                 if (shopExecution.getState() == ShopStateEnum.SUCCESS.getState()) {
                     modelMap.put("success", true);
