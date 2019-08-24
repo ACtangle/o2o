@@ -18,6 +18,14 @@ import java.io.InputStream;
 
 
 public interface ShopService {
+    /**
+     * 根据shopCondition返回分页店铺列表
+     * @param shopCondition
+     * @param pageIndex
+     * @param pageSize
+     * @return
+     */
+    public ShopExecution getShopList(Shop shopCondition,int pageIndex, int pageSize);
 
     Shop getByShopId(long shopId);
 

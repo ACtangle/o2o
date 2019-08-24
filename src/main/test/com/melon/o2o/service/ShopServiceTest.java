@@ -23,6 +23,16 @@ public class ShopServiceTest extends BaseTest {
     private ShopService shopService;
 
     @Test
+    public void getShopList(){
+        Shop shopCondition = new Shop();
+        ShopCategory shopCategory = new ShopCategory();
+        shopCategory.setShopCategoryId(1L);
+        shopCondition.setShopCategory(shopCategory);
+        ShopExecution shopExecution = shopService.getShopList(shopCondition,3,5);
+        System.out.println(shopExecution);
+    }
+
+    @Test
     public void modifyShop() throws ShopOperationException,FileNotFoundException{
         Shop shop = shopService.getByShopId(1L);
         File shopImg = new File("/Users/melon/Pictures/desktopImage/IMG_0077.jpg");
