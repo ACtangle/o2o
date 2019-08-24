@@ -9,6 +9,7 @@ import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.Date;
+import java.util.List;
 
 import static org.junit.Assert.*;
 
@@ -16,6 +17,22 @@ public class ShopDaoTest extends BaseTest {
 
     @Autowired
     private ShopDao shopDao;
+
+
+    @Test
+    public void queryShopListAndCount(){
+        Shop shopCondition = new Shop();
+        PersonInfo owner = new PersonInfo();
+        ShopCategory shopCategory = new ShopCategory();
+        shopCategory.setShopCategoryId(1L);
+        shopCondition.setShopCategory(shopCategory);
+        owner.setUserId(1L);
+        shopCondition.setOwner(owner);
+        List<Shop> shopList = shopDao.queryShopList(shopCondition,0,5);
+        assertEquals(5,shopList.size());
+        int count = shopDao.queryShopCount(shopCondition);
+        System.out.println(count);
+    }
 
     @Test
     public void queryByShopId() {
@@ -35,11 +52,11 @@ public class ShopDaoTest extends BaseTest {
         shop.setOwner(owner);
         shop.setArea(area);
         shop.setShopCategory(shopCategory);
-        shop.setShopName("测试的店铺13");
-        shop.setShopDesc("test11");
-        shop.setShopAddr("test11");
-        shop.setPhone("test11");
-        shop.setShopImg("test11");
+        shop.setShopName("测试的店铺9");
+        shop.setShopDesc("test9");
+        shop.setShopAddr("test9");
+        shop.setPhone("test9");
+        shop.setShopImg("test9");
         shop.setCreateTime(new Date());
         shop.setEnableStatus(1);
         shop.setAdvice("审核中");

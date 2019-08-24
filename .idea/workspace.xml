@@ -8,7 +8,10 @@
   <component name="ChangeListManager">
     <list default="true" id="a705bae2-ed2a-43a9-b547-d715424f3272" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/melon/o2o/web/shopadmin/ShopManagementController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/melon/o2o/web/shopadmin/ShopManagementController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/melon/o2o/dao/ShopDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/melon/o2o/dao/ShopDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/melon/o2o/entity/Shop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/melon/o2o/entity/Shop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/ShopDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/ShopDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/test/com/melon/o2o/dao/ShopDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/test/com/melon/o2o/dao/ShopDaoTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -23,34 +26,49 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/melon/o2o/web/shopadmin/ShopManagementController.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/melon/o2o/dao/ShopDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="81">
-              <caret line="110" column="17" selection-start-line="110" selection-start-column="17" selection-end-line="110" selection-end-column="17" />
+            <state relative-caret-position="190">
+              <caret line="25" column="54" selection-start-line="25" selection-start-column="54" selection-end-line="25" selection-end-column="54" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2947#2963#0" expanded="true" />
-                <element signature="e#8261#8291#1" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/html/shop/shopoperation.html">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/ShopDao.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="263">
-              <caret line="64" column="61" lean-forward="true" selection-start-line="64" selection-start-column="48" selection-end-line="64" selection-end-column="61" />
+            <state relative-caret-position="588">
+              <caret line="77" column="17" selection-start-line="77" selection-start-column="17" selection-end-line="77" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/shop/shopoperation.js">
+        <entry file="file://$PROJECT_DIR$/src/main/test/com/melon/o2o/dao/ShopDaoTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="106">
-              <caret line="26" column="53" selection-start-line="26" selection-start-column="53" selection-end-line="26" selection-end-column="53" />
+            <state relative-caret-position="147">
+              <caret line="23" column="34" lean-forward="true" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/melon/o2o/entity/Shop.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="131">
+              <caret line="13" selection-start-line="13" selection-end-line="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2171#2172#0" expanded="true" />
+                <element signature="e#2219#2220#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -90,7 +108,12 @@
       <find>area</find>
       <find>ared</find>
       <find>shopCategoryService</find>
+      <find>deleteFileOrPath</find>
+      <find>priority</find>
     </findStrings>
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -110,7 +133,6 @@
         <option value="$PROJECT_DIR$/src/main/test/com/melon/o2o/dao/BaseTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/melon/o2o/web/superadmin/AreaController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/logback.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/melon/o2o/entity/Shop.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/melon/o2o/enums/ShopStateEnum.java" />
         <option value="$PROJECT_DIR$/src/main/resources/spring/spring-service.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/melon/o2o/exceptions/ShopOperationException.java" />
@@ -138,9 +160,6 @@
         <option value="$PROJECT_DIR$/src/main/resources/spring/spring-dao.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/mapper/ShopCategoryDao.xml" />
         <option value="$PROJECT_DIR$/src/main/test/com/melon/o2o/dao/ShopCategoryDaoTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/melon/o2o/dao/ShopDao.java" />
-        <option value="$PROJECT_DIR$/src/main/test/com/melon/o2o/dao/ShopDaoTest.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/mapper/ShopDao.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/melon/o2o/service/ShopService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/melon/o2o/util/ImageUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/melon/o2o/dto/ShopExecution.java" />
@@ -149,6 +168,10 @@
         <option value="$PROJECT_DIR$/src/main/webapp/resources/js/common/common.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/resources/js/shop/shopoperation.js" />
         <option value="$PROJECT_DIR$/src/main/java/com/melon/o2o/web/shopadmin/ShopManagementController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/melon/o2o/dao/ShopDao.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapper/ShopDao.xml" />
+        <option value="$PROJECT_DIR$/src/main/test/com/melon/o2o/dao/ShopDaoTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/melon/o2o/entity/Shop.java" />
       </list>
     </option>
   </component>
@@ -239,6 +262,16 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="o2o" type="462c0819:PsiDirectoryNode" />
               <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myo2oproject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myo2oproject" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="o2o" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+              <item name="split" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="myo2oproject" type="b2602c69:ProjectViewProjectNode" />
@@ -504,24 +537,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Tomcat Server.Tomcat 8.5.43">
-    <configuration name="AreaServiceTest.getAreaList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="myo2oproject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.melon.o2o.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.melon.o2o.service" />
-      <option name="MAIN_CLASS_NAME" value="com.melon.o2o.service.AreaServiceTest" />
-      <option name="METHOD_NAME" value="getAreaList" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ShopCategoryDaoTest.queryShopCategory" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.ShopDaoTest.queryShopListAndCount">
+    <configuration name="ShopDaoTest.insertShop" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="myo2oproject" />
       <extension name="coverage">
         <pattern>
@@ -530,8 +547,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.melon.o2o.dao" />
-      <option name="MAIN_CLASS_NAME" value="com.melon.o2o.dao.ShopCategoryDaoTest" />
-      <option name="METHOD_NAME" value="queryShopCategory" />
+      <option name="MAIN_CLASS_NAME" value="com.melon.o2o.dao.ShopDaoTest" />
+      <option name="METHOD_NAME" value="insertShop" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -553,17 +570,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ShopServiceTest.addShop" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ShopDaoTest.queryShopList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="myo2oproject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.melon.o2o.service.*" />
+          <option name="PATTERN" value="com.melon.o2o.dao.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.melon.o2o.service" />
-      <option name="MAIN_CLASS_NAME" value="com.melon.o2o.service.ShopServiceTest" />
-      <option name="METHOD_NAME" value="addShop" />
+      <option name="PACKAGE_NAME" value="com.melon.o2o.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.melon.o2o.dao.ShopDaoTest" />
+      <option name="METHOD_NAME" value="queryShopList" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ShopDaoTest.queryShopListAndCount" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="myo2oproject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.melon.o2o.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.melon.o2o.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.melon.o2o.dao.ShopDaoTest" />
+      <option name="METHOD_NAME" value="queryShopListAndCount" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -795,21 +828,21 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.ShopCategoryDaoTest.queryShopCategory" />
-      <item itemvalue="JUnit.AreaServiceTest.getAreaList" />
-      <item itemvalue="JUnit.ShopServiceTest.addShop" />
       <item itemvalue="Tomcat Server.Tomcat 7.0.94" />
       <item itemvalue="Tomcat Server.Tomcat 8.5.43" />
       <item itemvalue="JUnit.ShopDaoTest.queryByShopId" />
       <item itemvalue="JUnit.ShopServiceTest.modifyShop" />
+      <item itemvalue="JUnit.ShopDaoTest.insertShop" />
+      <item itemvalue="JUnit.ShopDaoTest.queryShopList" />
+      <item itemvalue="JUnit.ShopDaoTest.queryShopListAndCount" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ShopServiceTest.modifyShop" />
+        <item itemvalue="JUnit.ShopDaoTest.queryShopListAndCount" />
+        <item itemvalue="JUnit.ShopDaoTest.queryShopList" />
         <item itemvalue="JUnit.ShopDaoTest.queryByShopId" />
-        <item itemvalue="JUnit.ShopServiceTest.addShop" />
-        <item itemvalue="JUnit.AreaServiceTest.getAreaList" />
-        <item itemvalue="JUnit.ShopCategoryDaoTest.queryShopCategory" />
+        <item itemvalue="JUnit.ShopDaoTest.insertShop" />
+        <item itemvalue="JUnit.ShopServiceTest.modifyShop" />
       </list>
     </recent_temporary>
   </component>
@@ -834,7 +867,7 @@
       <workItem from="1565984274761" duration="65366000" />
       <workItem from="1566405133439" duration="8877000" />
       <workItem from="1376674026037" duration="6606000" />
-      <workItem from="1566546484797" duration="13404000" />
+      <workItem from="1566546484797" duration="18347000" />
     </task>
     <task id="LOCAL-00001" summary="创建所有实体类">
       <created>1565945360356</created>
@@ -962,43 +995,50 @@
       <option name="project" value="LOCAL" />
       <updated>1566577785410</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="修改bug： 店铺编辑时，未传入图片时也可以通过">
+      <created>1566578295745</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1566578295745</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ShopServiceTest_modifyShop - 2019.08.23 at 16h 57m 49s.xml">
-      <configuration name="ShopServiceTest.modifyShop" configurationId="JUnit" />
+    <history-entry file="ShopDaoTest_queryShopList - 2019.08.24 at 21h 54m 21s.xml">
+      <configuration name="ShopDaoTest.queryShopList" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ShopServiceTest_modifyShop - 2019.08.23 at 17h 00m 28s.xml">
-      <configuration name="ShopServiceTest.modifyShop" configurationId="JUnit" />
+    <history-entry file="ShopDaoTest_queryShopList - 2019.08.24 at 21h 55m 48s.xml">
+      <configuration name="ShopDaoTest.queryShopList" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ShopServiceTest_modifyShop - 2019.08.23 at 17h 01m 34s.xml">
-      <configuration name="ShopServiceTest.modifyShop" configurationId="JUnit" />
+    <history-entry file="ShopDaoTest_queryByShopId - 2019.08.24 at 21h 56m 27s.xml">
+      <configuration name="ShopDaoTest.queryByShopId" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ShopServiceTest_modifyShop - 2019.08.23 at 17h 04m 19s.xml">
-      <configuration name="ShopServiceTest.modifyShop" configurationId="JUnit" />
+    <history-entry file="ShopDaoTest_queryShopList - 2019.08.24 at 21h 56m 58s.xml">
+      <configuration name="ShopDaoTest.queryShopList" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ShopServiceTest_modifyShop - 2019.08.23 at 17h 06m 29s.xml">
-      <configuration name="ShopServiceTest.modifyShop" configurationId="JUnit" />
+    <history-entry file="ShopDaoTest_queryShopList - 2019.08.24 at 21h 57m 33s.xml">
+      <configuration name="ShopDaoTest.queryShopList" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ShopServiceTest_modifyShop - 2019.08.23 at 17h 08m 09s.xml">
-      <configuration name="ShopServiceTest.modifyShop" configurationId="JUnit" />
+    <history-entry file="ShopDaoTest_queryShopList - 2019.08.24 at 21h 57m 55s.xml">
+      <configuration name="ShopDaoTest.queryShopList" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ShopServiceTest_modifyShop - 2019.08.23 at 17h 08m 50s.xml">
-      <configuration name="ShopServiceTest.modifyShop" configurationId="JUnit" />
+    <history-entry file="ShopDaoTest_queryShopListAndCount - 2019.08.24 at 21h 58m 57s.xml">
+      <configuration name="ShopDaoTest.queryShopListAndCount" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ShopServiceTest_modifyShop - 2019.08.23 at 17h 10m 29s.xml">
-      <configuration name="ShopServiceTest.modifyShop" configurationId="JUnit" />
+    <history-entry file="ShopDaoTest_queryShopListAndCount - 2019.08.24 at 22h 05m 47s.xml">
+      <configuration name="ShopDaoTest.queryShopListAndCount" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ShopServiceTest_modifyShop - 2019.08.23 at 17h 11m 29s.xml">
-      <configuration name="ShopServiceTest.modifyShop" configurationId="JUnit" />
+    <history-entry file="ShopDaoTest_queryShopListAndCount - 2019.08.24 at 22h 09m 01s.xml">
+      <configuration name="ShopDaoTest.queryShopListAndCount" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ShopServiceTest_modifyShop - 2019.08.23 at 17h 22m 42s.xml">
-      <configuration name="ShopServiceTest.modifyShop" configurationId="JUnit" />
+    <history-entry file="ShopDaoTest_queryShopListAndCount - 2019.08.24 at 22h 09m 26s.xml">
+      <configuration name="ShopDaoTest.queryShopListAndCount" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="116420000" />
+    <option name="totallyTimeSpent" value="121363000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1023,7 +1063,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32970297" />
-      <window_info active="true" anchor="bottom" id="Debug" order="2" sideWeight="0.53700906" visible="true" weight="0.39971346" />
+      <window_info anchor="bottom" id="Debug" order="2" sideWeight="0.5354985" weight="0.39971346" />
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="5" sideWeight="0.49924472" weight="0.3295129" />
@@ -1036,7 +1076,7 @@
       <window_info anchor="bottom" id="Application Servers" order="12" weight="0.32808024" />
       <window_info anchor="bottom" id="Messages" order="13" sideWeight="0.49697885" weight="0.3295129" />
       <window_info anchor="bottom" id="Spring" order="14" sideWeight="0.49924472" weight="0.3295129" />
-      <window_info anchor="bottom" id="Run" order="15" sideWeight="0.46299094" side_tool="true" weight="0.39971346" />
+      <window_info active="true" anchor="bottom" id="Run" order="15" sideWeight="0.4645015" side_tool="true" visible="true" weight="0.39971346" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24980143" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -1069,34 +1109,14 @@
     <MESSAGE value="完成店铺注册信息的修改接口开发" />
     <MESSAGE value="店铺编辑开发" />
     <MESSAGE value="修改前端bug" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改前端bug" />
+    <MESSAGE value="修改bug： 店铺编辑时，未传入图片时也可以通过" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改bug： 店铺编辑时，未传入图片时也可以通过" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.4.2/mybatis-3.4.2.jar!/org/apache/ibatis/session/defaults/DefaultSqlSession.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="127" selection-start-line="127" selection-end-line="127" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.4.2/mybatis-3.4.2.jar!/org/apache/ibatis/plugin/Plugin.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="39" selection-start-line="39" selection-end-line="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/AreaDao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="9" lean-forward="true" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/melon/o2o/entity/LocalAuth.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="193">
@@ -1188,47 +1208,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/melon/o2o/entity/ShopCategory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-505">
-          <caret line="34" column="5" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
-          <folding>
-            <element signature="e#522#523#0" expanded="true" />
-            <element signature="e#559#560#0" expanded="true" />
-            <element signature="e#617#618#0" expanded="true" />
-            <element signature="e#669#670#0" expanded="true" />
-            <element signature="e#712#713#0" expanded="true" />
-            <element signature="e#751#752#0" expanded="true" />
-            <element signature="e#815#816#0" expanded="true" />
-            <element signature="e#871#872#0" expanded="true" />
-            <element signature="e#914#915#0" expanded="true" />
-            <element signature="e#953#954#0" expanded="true" />
-            <element signature="e#1017#1018#0" expanded="true" />
-            <element signature="e#1073#1074#0" expanded="true" />
-            <element signature="e#1115#1116#0" expanded="true" />
-            <element signature="e#1153#1154#0" expanded="true" />
-            <element signature="e#1215#1216#0" expanded="true" />
-            <element signature="e#1269#1270#0" expanded="true" />
-            <element signature="e#1305#1306#0" expanded="true" />
-            <element signature="e#1336#1337#0" expanded="true" />
-            <element signature="e#1385#1386#0" expanded="true" />
-            <element signature="e#1425#1426#0" expanded="true" />
-            <element signature="e#1460#1461#0" expanded="true" />
-            <element signature="e#1493#1494#0" expanded="true" />
-            <element signature="e#1543#1544#0" expanded="true" />
-            <element signature="e#1587#1588#0" expanded="true" />
-            <element signature="e#1624#1625#0" expanded="true" />
-            <element signature="e#1659#1660#0" expanded="true" />
-            <element signature="e#1713#1714#0" expanded="true" />
-            <element signature="e#1761#1762#0" expanded="true" />
-            <element signature="e#1800#1801#0" expanded="true" />
-            <element signature="e#1829#1830#0" expanded="true" />
-            <element signature="e#1879#1880#0" expanded="true" />
-            <element signature="e#1915#1916#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/spring/spring-dao.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
@@ -1242,16 +1221,6 @@
             <element signature="e#2692#2711#0" expanded="true" />
             <element signature="e#2750#2774#0" expanded="true" />
             <element signature="e#2817#2841#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/melon/o2o/dao/split/DynamicDataSourceInterceptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="60" column="17" lean-forward="true" selection-start-line="60" selection-start-column="17" selection-end-line="60" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1349,37 +1318,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/test/com/melon/o2o/dao/ShopDaoTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="31" column="27" lean-forward="true" selection-start-line="31" selection-start-column="27" selection-end-line="31" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/melon/o2o/entity/Shop.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/melon/o2o/dto/ShopExecution.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="117">
           <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/melon/o2o/dao/ShopDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="33" column="18" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -1397,18 +1339,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/melon/o2o/util/ImageUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="53" column="7" lean-forward="true" selection-start-line="53" selection-start-column="7" selection-end-line="53" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2185#2186#0" expanded="true" />
-            <element signature="e#2253#2254#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/test/com/melon/o2o/service/ShopServiceTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="94">
@@ -1423,36 +1353,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="117">
           <caret line="19" column="17" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/melon/o2o/service/imp/ShopServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="54" column="52" selection-start-line="54" selection-start-column="52" selection-end-line="54" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#930#931#0" expanded="true" />
-            <element signature="e#958#959#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/ShopDao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-240">
-          <caret line="44" column="46" selection-start-line="44" selection-start-column="46" selection-end-line="44" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/melon/o2o/exceptions/ShopOperationException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="16" column="19" lean-forward="true" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
-          <folding>
-            <element signature="e#335#336#0" expanded="true" />
-            <element signature="e#361#362#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1491,6 +1391,43 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.7.RELEASE/spring-web-4.3.7.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="395">
+          <caret line="122" selection-start-line="122" selection-end-line="122" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/melon/o2o/exceptions/ShopOperationException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding>
+            <element signature="e#335#336#0" expanded="true" />
+            <element signature="e#361#362#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/u1tigt/src/main/java/com/imooc/myo2o/service/impl/ShopServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="142" column="56" lean-forward="true" selection-start-line="142" selection-end-line="143" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/melon/o2o/util/ImageUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="96" column="23" selection-start-line="96" selection-start-column="23" selection-end-line="96" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2185#2186#0" expanded="true" />
+            <element signature="e#2253#2254#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/html/shop/shopoperation.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="263">
@@ -1505,21 +1442,96 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.7.RELEASE/spring-web-4.3.7.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/melon/o2o/entity/ShopCategory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="395">
-          <caret line="122" selection-start-line="122" selection-end-line="122" />
+        <state relative-caret-position="111">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/melon/o2o/service/imp/ShopServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="49" column="21" lean-forward="true" selection-start-line="49" selection-start-column="21" selection-end-line="49" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#930#931#0" expanded="true" />
+            <element signature="e#982#983#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/melon/o2o/web/shopadmin/ShopManagementController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="110" column="17" selection-start-line="110" selection-start-column="17" selection-end-line="110" selection-end-column="17" />
+        <state relative-caret-position="161">
+          <caret line="114" column="53" selection-start-line="114" selection-start-column="53" selection-end-line="114" selection-end-column="53" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#2947#2963#0" expanded="true" />
             <element signature="e#8261#8291#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/melon/o2o/dao/ShopDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="25" column="54" selection-start-line="25" selection-start-column="54" selection-end-line="25" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.4.2/mybatis-3.4.2.jar!/org/apache/ibatis/plugin/Plugin.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.4.2/mybatis-3.4.2.jar!/org/apache/ibatis/session/defaults/DefaultSqlSession.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="127" selection-start-line="127" selection-end-line="127" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/melon/o2o/dao/split/DynamicDataSourceInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="53" column="31" lean-forward="true" selection-start-line="53" selection-start-column="31" selection-end-line="53" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/ShopDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="588">
+          <caret line="77" column="17" selection-start-line="77" selection-start-column="17" selection-end-line="77" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/test/com/melon/o2o/dao/ShopDaoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="23" column="34" lean-forward="true" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/melon/o2o/entity/Shop.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2171#2172#0" expanded="true" />
+            <element signature="e#2219#2220#0" expanded="true" />
           </folding>
         </state>
       </provider>
