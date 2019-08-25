@@ -9,7 +9,9 @@ package com.melon.o2o.enums;
  */
 public enum ProductCategoryEnum {
 
-    INNER_ERROR(0,"内部系统错误");
+    SUCCESS(1,"操作成功"),
+    INNER_ERROR(-1001,"内部系统错误"),
+    EMPTY_LIST(-1002,"列表为空");
 
     private int state;
 
