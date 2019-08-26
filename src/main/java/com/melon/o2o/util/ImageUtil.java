@@ -52,6 +52,29 @@ public class ImageUtil {
         return relativePath;
     }
 
+    //处理缩略图
+    public static String generateNormalImg(ImageHolder thumbnail, String targetAddr) {
+
+        String realFileName = getRandomFileName();
+        String extension = getFileExtension(thumbnail.getImageName());
+        makeDirPath(targetAddr);
+        String relativePath = targetAddr + realFileName + extension;
+        log.debug("current complete relativeAddr is:" + relativePath);
+        File dest = new File(PathUtil.getImgBasePath() + relativePath);
+        log.debug("current complete addr is:" + PathUtil.getImgBasePath() + relativePath);
+        log.debug("basePath:" + basePath);
+
+        try {
+            Thumbnails.of(thumbnail.getImage()).size(337,640)
+                    .watermark(Positions.BOTTOM_RIGHT, ImageIO.read(new File(basePath + "/watermark.jpg")), 0.25f)
+                    .outputQuality(0.8f)
+                    .toFile(dest);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return relativePath;
+    }
+
     /**
      * 生成随机文件名，当前年月日小时分钟秒钟+五位随机数
      *
