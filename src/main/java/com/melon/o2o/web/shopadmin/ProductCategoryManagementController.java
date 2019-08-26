@@ -49,6 +49,7 @@ public class ProductCategoryManagementController {
         }
     }
 
+
     @RequestMapping(value = "/addproductcategorys", method = RequestMethod.POST)
     @ResponseBody
     private Map<String, Object> addProductCategorys(@RequestBody List<ProductCategory> productCategoryList,
