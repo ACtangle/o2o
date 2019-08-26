@@ -1,6 +1,7 @@
 package com.melon.o2o.service;
 
 import com.melon.o2o.dao.BaseTest;
+import com.melon.o2o.dto.ImageHolder;
 import com.melon.o2o.dto.ShopExecution;
 import com.melon.o2o.entity.Area;
 import com.melon.o2o.entity.PersonInfo;
@@ -36,8 +37,8 @@ public class ShopServiceTest extends BaseTest {
     public void modifyShop() throws ShopOperationException,FileNotFoundException{
         Shop shop = shopService.getByShopId(1L);
         File shopImg = new File("/Users/melon/Pictures/desktopImage/IMG_0077.jpg");
-        InputStream inputStream = new FileInputStream(shopImg);
-        ShopExecution shopExecution = shopService.modifyShop(shop,inputStream,shopImg.getName());
+        ImageHolder thumbnail = new ImageHolder(shopImg.getName(),new FileInputStream(shopImg));
+        ShopExecution shopExecution = shopService.modifyShop(shop,thumbnail);
         System.out.println(shopExecution.getState());
     }
 
@@ -62,8 +63,8 @@ public class ShopServiceTest extends BaseTest {
         shop.setAdvice("审核中");
 ///Users/melon/Pictures/desktopImage/IMG_0077.jpg
         File shopImg = new File("/Users/melon/Pictures/desktopImage/IMG_0077.jpg");
-        InputStream inputStream = new FileInputStream(shopImg);
-        ShopExecution shopExecution = shopService.addShop(shop, inputStream, shopImg.getName());
+        ImageHolder thumbnail = new ImageHolder(shopImg.getName(),new FileInputStream(shopImg));
+        ShopExecution shopExecution = shopService.addShop(shop,thumbnail );
         assertEquals(ShopStateEnum.CHECK.getState(),shopExecution.getState());
 
     }

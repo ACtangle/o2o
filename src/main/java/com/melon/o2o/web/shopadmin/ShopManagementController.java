@@ -1,6 +1,5 @@
 package com.melon.o2o.web.shopadmin;
 
-import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.melon.o2o.dto.ImageHolder;
 import com.melon.o2o.dto.ShopExecution;
