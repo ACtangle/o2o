@@ -1,7 +1,9 @@
 package com.melon.o2o.dao;
 
 import com.melon.o2o.entity.ProductCategory;
+import org.junit.FixMethodOrder;
 import org.junit.Test;
+import org.junit.runners.MethodSorters;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.ArrayList;
@@ -10,6 +12,7 @@ import java.util.List;
 
 import static org.junit.Assert.*;
 
+@FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class ProductCategoryDaoTest extends BaseTest{
 
     @Autowired
@@ -45,4 +48,6 @@ public class ProductCategoryDaoTest extends BaseTest{
         int result = productCategoryDao.batchInsertProductCategory(productCategoryList);
         assertEquals(3,result);
     }
+
+
 }

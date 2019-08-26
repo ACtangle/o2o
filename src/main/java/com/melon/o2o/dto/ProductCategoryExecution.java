@@ -32,7 +32,7 @@ public class ProductCategoryExecution {
         this.stateInfo = productCategoryEnum.getStateInfo();
     }
 
-    //操作成功的狗在其
+    //操作成功的构造器
     public ProductCategoryExecution(ProductCategoryEnum productCategoryEnum,List<ProductCategory> productCategoryList){
         this.state = productCategoryEnum.getState();
         this.stateInfo = productCategoryEnum.getStateInfo();

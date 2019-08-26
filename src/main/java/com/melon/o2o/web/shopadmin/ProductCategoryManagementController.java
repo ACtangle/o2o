@@ -79,4 +79,33 @@ public class ProductCategoryManagementController {
         }
         return modelMap;
     }
+
+    @RequestMapping(value = "/removeproductcategory", method = RequestMethod.POST)
+    @ResponseBody
+    private Map<String, Object> removeproductcategory(Long productCategoryId,
+                                                      HttpServletRequest request) {
+        Map<String, Object> modelMap = new HashMap<>();
+        if (productCategoryId != null && productCategoryId > 0) {
+            try {
+                Shop currentShop = (Shop) request.getSession().getAttribute("currentShop");
+                ProductCategoryExecution productCategoryExecution = productCategoryService.deleteProductCategory(productCategoryId, currentShop.getShopId());
+                if (productCategoryExecution.getState() == ProductCategoryEnum.SUCCESS.getState()) {
+                    modelMap.put("success", true);
+                } else {
+                    modelMap.put("success", false);
+                    modelMap.put("errMsg", productCategoryExecution.getStateInfo());
+                }
+            } catch (ProductCategoryOperationException e) {
+                modelMap.put("success", false);
+                modelMap.put("errMsg", e.getMessage());
+                return modelMap;
+            }
+        } else {
+            modelMap.put("success", false);
+            modelMap.put("errMsg", "请至少选择一个商品类别");
+        }
+        return modelMap;
+    }
+
+
 }

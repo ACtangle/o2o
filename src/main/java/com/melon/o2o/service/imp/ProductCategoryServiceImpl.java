@@ -60,4 +60,20 @@ public class ProductCategoryServiceImpl implements ProductCategoryService {
             return new ProductCategoryExecution(ProductCategoryEnum.EMPTY_LIST);
         }
     }
+
+    @Override
+    @Transactional
+    public ProductCategoryExecution deleteProductCategory(long productCategoryId, long shopId) throws ProductCategoryOperationException {
+        //TODO:将此商品类别下的商品的类别id置位空
+        try{
+            int result =  productCategoryDao.deleteProductCategory(productCategoryId,shopId);
+            if (result <= 0){
+                throw new ProductCategoryOperationException("店铺类别删除失败");
+            }else {
+                return new ProductCategoryExecution(ProductCategoryEnum.SUCCESS);
+            }
+        }catch (Exception e){
+            throw new ProductCategoryOperationException("deleteProductCategory errorL:" + e.getMessage());
+        }
+    }
 }
