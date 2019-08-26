@@ -15,6 +15,8 @@ public class ImageHolder {
     private String imageName;
     private InputStream image;
 
+    public ImageHolder(){}
+
     public ImageHolder(String imageName, InputStream image) {
         this.imageName = imageName;
         this.image = image;

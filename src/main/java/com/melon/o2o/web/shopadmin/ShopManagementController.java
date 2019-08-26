@@ -2,6 +2,7 @@ package com.melon.o2o.web.shopadmin;
 
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.melon.o2o.dto.ImageHolder;
 import com.melon.o2o.dto.ShopExecution;
 import com.melon.o2o.entity.Area;
 import com.melon.o2o.entity.PersonInfo;
@@ -158,9 +159,12 @@ public class ShopManagementController {
             ShopExecution shopExecution = null;
             try {
                 if (shopImg == null) {
-                    shopExecution = shopService.modifyShop(shop, null, null);
+                    shopExecution = shopService.modifyShop(shop, null);
                 } else {
-                    shopExecution = shopService.modifyShop(shop, shopImg.getInputStream(), shopImg.getOriginalFilename());
+                    ImageHolder imageHolder = new ImageHolder();
+                    imageHolder.setImage(shopImg.getInputStream());
+                    imageHolder.setImageName(shopImg.getOriginalFilename());
+                    shopExecution = shopService.modifyShop(shop, imageHolder);
                 }
                 if (shopExecution.getState() == ShopStateEnum.SUCCESS.getState()) {
                     modelMap.put("success", true);
@@ -241,9 +245,10 @@ public class ShopManagementController {
             PersonInfo owner = (PersonInfo) request.getSession().getAttribute("user");
             shop.setOwner(owner);
             try {
-                InputStream inputStream = shopImg.getInputStream();
-                String fileName = shopImg.getOriginalFilename();
-                ShopExecution shopExecution = shopService.addShop(shop, inputStream, fileName);
+                ImageHolder imageHolder = new ImageHolder();
+                imageHolder.setImage(shopImg.getInputStream());
+                imageHolder.setImageName(shopImg.getOriginalFilename());
+                ShopExecution shopExecution = shopService.addShop(shop,imageHolder);
 
                 if (shopExecution.getState() == ShopStateEnum.CHECK.getState()) {
                     modelMap.put("success", true);
