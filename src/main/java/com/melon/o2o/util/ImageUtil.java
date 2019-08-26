@@ -1,5 +1,6 @@
 package com.melon.o2o.util;
 
+import com.melon.o2o.dto.ImageHolder;
 import lombok.extern.slf4j.Slf4j;
 import net.coobird.thumbnailator.Thumbnails;
 import net.coobird.thumbnailator.geometry.Positions;
@@ -29,10 +30,10 @@ public class ImageUtil {
 
     private static final Random random = new Random();
 
-    public static String generateThumbnail(InputStream thumbnailInputStream, String fileName, String targetAddr) {
+    public static String generateThumbnail(ImageHolder thumbnail, String targetAddr) {
 
         String realFileName = getRandomFileName();
-        String extension = getFileExtension(fileName);
+        String extension = getFileExtension(thumbnail.getImageName());
         makeDirPath(targetAddr);
         String relativePath = targetAddr + realFileName + extension;
         log.debug("current complete relativeAddr is:" + relativePath);
@@ -41,7 +42,7 @@ public class ImageUtil {
         log.debug("basePath:" + basePath);
 
         try {
-            Thumbnails.of(thumbnailInputStream).size(200, 200)
+            Thumbnails.of(thumbnail.getImage()).size(200, 200)
                     .watermark(Positions.BOTTOM_RIGHT, ImageIO.read(new File(basePath + "/watermark.jpg")), 0.25f)
                     .outputQuality(0.8f)
                     .toFile(dest);
