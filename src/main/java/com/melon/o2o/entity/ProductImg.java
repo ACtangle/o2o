@@ -16,7 +16,7 @@ public class ProductImg {
 
     private Long productImgId;
 
-    private String imgAdd;
+    private String imgAddr;
 
     private String imgDesc;
 
@@ -34,12 +34,12 @@ public class ProductImg {
         this.productImgId = productImgId;
     }
 
-    public String getImgAdd() {
-        return imgAdd;
+    public String getImgAddr() {
+        return imgAddr;
     }
 
-    public void setImgAdd(String imgAdd) {
-        this.imgAdd = imgAdd;
+    public void setImgAddr(String imgAddr) {
+        this.imgAddr = imgAddr;
     }
 
     public String getImgDesc() {
