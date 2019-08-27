@@ -6,16 +6,9 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a705bae2-ed2a-43a9-b547-d715424f3272" name="Default Changelist" comment="重构图片参数">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/melon/o2o/dto/ProductExecution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/melon/o2o/enums/ProductStateEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/melon/o2o/exceptions/ProductOperationException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/melon/o2o/service/ProductService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/melon/o2o/service/imp/ProductServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/test/com/melon/o2o/service/ProductServiceTest.java" afterDir="false" />
+    <list default="true" id="a705bae2-ed2a-43a9-b547-d715424f3272" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/melon/o2o/web/shopadmin/ProductManagementController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/melon/o2o/util/ImageUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/melon/o2o/util/ImageUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/melon/o2o/util/PathUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/melon/o2o/util/PathUtil.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -45,8 +38,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/melon/o2o/service/imp/ProductServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="538">
-              <caret line="75" column="61" selection-start-line="75" selection-start-column="61" selection-end-line="75" selection-end-column="61" />
+            <state relative-caret-position="391">
+              <caret line="80" column="17" selection-start-line="80" selection-start-column="17" selection-end-line="80" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -55,10 +48,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/melon/o2o/web/shopadmin/ProductManagementController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="481">
+              <caret line="129" column="43" selection-start-line="129" selection-start-column="43" selection-end-line="129" selection-end-column="43" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/test/com/melon/o2o/service/ProductServiceTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="34" column="28" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="28" />
+            <state relative-caret-position="67">
+              <caret line="34" column="30" lean-forward="true" selection-start-line="34" selection-start-column="30" selection-end-line="34" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -75,14 +80,13 @@
         <option value="Enum" />
         <option value="HTML File" />
         <option value="Interface" />
-        <option value="Class" />
         <option value="JUnit4 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>CommonsMultipartFile</find>
       <find>shopImg</find>
       <find>name</find>
       <find>addShopImg</find>
@@ -112,6 +116,7 @@
       <find>updateProductCategoryToNull</find>
       <find>deleteProduct</find>
       <find>addShop</find>
+      <find>product</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -123,7 +128,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/melon/o2o/dto/ShopExecution.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/resources/js/common/common.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/resources/js/shop/shopoperation.js" />
         <option value="$PROJECT_DIR$/src/main/java/com/melon/o2o/entity/Shop.java" />
@@ -174,6 +178,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/melon/o2o/service/imp/ProductServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/melon/o2o/service/ProductService.java" />
         <option value="$PROJECT_DIR$/src/main/test/com/melon/o2o/service/ProductServiceTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/melon/o2o/web/shopadmin/ProductManagementController.java" />
       </list>
     </option>
   </component>
@@ -926,7 +931,7 @@
       <workItem from="1565984274761" duration="65366000" />
       <workItem from="1566405133439" duration="8877000" />
       <workItem from="1376674026037" duration="6606000" />
-      <workItem from="1566546484797" duration="56190000" />
+      <workItem from="1566546484797" duration="58203000" />
     </task>
     <task id="LOCAL-00001" summary="创建所有实体类">
       <created>1565945360356</created>
@@ -1138,13 +1143,17 @@
       <option name="project" value="LOCAL" />
       <updated>1566843540994</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="添加商品接口开发完成">
+      <created>1566846301138</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1566846301138</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ProductDaoTest_testBQueryProductList - 2019.08.27 at 01h 39m 43s.xml">
-      <configuration name="ProductDaoTest.testBQueryProductList" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="ProductDaoTest_testCQueryProductCount - 2019.08.27 at 01h 40m 31s.xml">
       <configuration name="ProductDaoTest.testCQueryProductCount" configurationId="JUnit" />
     </history-entry>
@@ -1172,9 +1181,12 @@
     <history-entry file="ProductServiceTest_testAAddProduct - 2019.08.27 at 03h 02m 47s.xml">
       <configuration name="ProductServiceTest.testAAddProduct" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="ProductServiceTest_testAAddProduct - 2019.08.27 at 03h 04m 14s.xml">
+      <configuration name="ProductServiceTest.testAAddProduct" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="159206000" />
+    <option name="totallyTimeSpent" value="161219000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1189,7 +1201,7 @@
     <frame x="0" y="0" width="1366" height="768" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22885196" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22885196" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -1212,7 +1224,7 @@
       <window_info anchor="bottom" id="Application Servers" order="12" weight="0.32808024" />
       <window_info anchor="bottom" id="Messages" order="13" sideWeight="0.4954683" weight="0.3295129" />
       <window_info anchor="bottom" id="Spring" order="14" sideWeight="0.49924472" weight="0.3295129" />
-      <window_info active="true" anchor="bottom" id="Run" order="15" sideWeight="0.46827793" side_tool="true" visible="true" weight="0.39971346" />
+      <window_info anchor="bottom" id="Run" order="15" sideWeight="0.46827793" side_tool="true" weight="0.39971346" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24980143" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -1228,7 +1240,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="整合springmvc+mybatis，数据库配置的是8.0+版本的mysql" />
     <MESSAGE value="logback配置" />
     <MESSAGE value="实现商品dao层以及为图片添加水印工具类的部分实现" />
     <MESSAGE value="商品dto实体和商品状态枚举类" />
@@ -1253,7 +1264,8 @@
     <MESSAGE value="商品分类模块开发完成" />
     <MESSAGE value="商品模块dao完成，单元测试通过" />
     <MESSAGE value="重构图片参数" />
-    <option name="LAST_COMMIT_MESSAGE" value="重构图片参数" />
+    <MESSAGE value="添加商品接口开发完成" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加商品接口开发完成" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1264,12 +1276,6 @@
           <properties />
           <option name="timeStamp" value="28" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/melon/o2o/service/imp/ProductServiceImpl.java</url>
-          <line>49</line>
-          <properties />
-          <option name="timeStamp" value="32" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
@@ -1278,16 +1284,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/catalina.base_IS_UNDEFINED/logs/webapps/debug.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="35" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/catalina.base_IS_UNDEFINED/logs/webapps/error.log">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/catalina.base_IS_UNDEFINED/logs/webapps/info.log">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1648,17 +1644,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/melon/o2o/dto/ImageHolder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="77">
-          <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
-          <folding>
-            <element signature="e#664#665#0" expanded="true" />
-            <element signature="e#698#699#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/melon/o2o/dto/ProductExecution.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="748">
@@ -1718,20 +1703,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/test/com/melon/o2o/service/ProductServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="67">
+          <caret line="34" column="30" lean-forward="true" selection-start-line="34" selection-start-column="30" selection-end-line="34" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/melon/o2o/service/imp/ProductServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="538">
-          <caret line="75" column="61" selection-start-line="75" selection-start-column="61" selection-end-line="75" selection-end-column="61" />
+        <state relative-caret-position="391">
+          <caret line="80" column="17" selection-start-line="80" selection-start-column="17" selection-end-line="80" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/test/com/melon/o2o/service/ProductServiceTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/melon/o2o/util/HttpServletRequestUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="34" column="28" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="28" />
+        <state relative-caret-position="343">
+          <caret line="57" column="30" lean-forward="true" selection-start-line="57" selection-start-column="30" selection-end-line="57" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/melon/o2o/dto/ImageHolder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="11" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/melon/o2o/web/shopadmin/ProductManagementController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="481">
+          <caret line="129" column="43" selection-start-line="129" selection-start-column="43" selection-end-line="129" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
