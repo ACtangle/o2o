@@ -5,7 +5,7 @@ import com.melon.o2o.dto.ProductExecution;
 import com.melon.o2o.entity.Product;
 import com.melon.o2o.exceptions.ProductOperationException;
 
-import java.io.InputStream;
+
 import java.util.List;
 
 /**
@@ -33,5 +33,27 @@ public interface ProductService {
     ProductExecution addProduct(Product product,
                                 ImageHolder thumbnail,
                                 List<ImageHolder> thumbnaiList
-                                ) throws ProductOperationException;
+    ) throws ProductOperationException;
+
+    /**
+     * 查询商品列表分页，可输入的条件有：商品名（模糊），商品状态，店铺Id，商品类别
+     * @param productCondition
+     * @param pageIndex
+     * @param pageSize
+     * @return
+     */
+    ProductExecution getProductList(Product productCondition, int pageIndex, int pageSize);
+
+    /**
+     * 根据商品id查询指定商品
+     * @param productId
+     * @return
+     */
+    Product getProductById(long productId);
+
+
+    ProductExecution modifyProduct(Product product,
+                                   ImageHolder thumbnail,
+                                   List<ImageHolder> thumbnaiList
+    ) throws ProductOperationException;
 }

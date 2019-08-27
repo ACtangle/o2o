@@ -14,6 +14,11 @@ import java.util.List;
 
 public interface ProductImgDao {
 
+    /**
+     * 根据商品id查询指定的商品图片列表
+     * @param productId
+     * @return
+     */
     List<ProductImg> queryProductImgList(long productId);
 
     /**
@@ -23,5 +28,10 @@ public interface ProductImgDao {
      */
     int batchInsertProductImg(List<ProductImg> productImgList);
 
+    /**
+     * 删除指定商品的所有图片
+     * @param productId
+     * @return
+     */
     int deleteProductImgByProductId(long productId);
 }

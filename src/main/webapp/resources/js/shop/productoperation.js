@@ -2,7 +2,7 @@ $(function () {
     //从URL里获取productId的值
     var productId = getQueryString('productId');
     //通过productId获取商品信息的URL;
-    var infoUrl = '/o2o/shopadmin/getproductid?productId' + productId;
+    var infoUrl = '/o2o/shopadmin/getproductbyid?productId=' + productId;
     //获取当前店铺设定的商品列表的URL
     var categoryUrl = '/o2o/shopadmin/getproductcategorylist';
     //更新商品信息的URL
@@ -28,7 +28,7 @@ $(function () {
                 $('#product-desc').val(product.productDesc);
                 $('#priority').val(product.priority);
                 $('#normal-price').val(product.normalPrice);
-                $('#promotion-price').val(product.promortionPrice);
+                $('#promotion-price').val(product.promotionPrice);
                 //获取原本的商品类别以及该商铺下的所有商品类别列表
                 var optionHtml = '';
                 var optionArr = data.productCategoryList;

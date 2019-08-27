@@ -11,7 +11,8 @@ public enum ProductStateEnum {
 
 
     SUCCESS(1, "操作成功"),
-    EMPTY(-1001,"参数为空");
+    EMPTY(-1001,"参数为空"),
+    INNER_ERROR(-1002,"内部错误");
 
     private int state;
 

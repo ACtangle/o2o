@@ -26,10 +26,14 @@ public class ProductExecution {
     //实体
     private Product product;
 
+    //数量
+    private int count;
+
     //列表
     private List<Product> productList;
 
-    public ProductExecution(){}
+    public ProductExecution() {
+    }
 
     //操作失败生成的构造器
     public ProductExecution(ProductStateEnum productEnum) {
@@ -38,19 +42,18 @@ public class ProductExecution {
     }
 
     //操作成功的构造器
-    public ProductExecution(ProductStateEnum productEnum, List<Product> productList){
+    public ProductExecution(ProductStateEnum productEnum, List<Product> productList) {
         this.state = productEnum.getState();
         this.stateInfo = productEnum.getStateInfo();
         this.productList = productList;
     }
 
     //操作成功的构造器
-    public ProductExecution(ProductStateEnum productEnum, Product product){
+    public ProductExecution(ProductStateEnum productEnum, Product product) {
         this.state = productEnum.getState();
         this.stateInfo = productEnum.getStateInfo();
         this.product = product;
     }
-
 
 
     public int getState() {
@@ -83,5 +86,13 @@ public class ProductExecution {
 
     public void setProduct(Product product) {
         this.product = product;
+    }
+
+    public int getCount() {
+        return count;
+    }
+
+    public void setCount(int count) {
+        this.count = count;
     }
 }
