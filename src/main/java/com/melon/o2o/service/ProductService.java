@@ -24,19 +24,18 @@ public interface ProductService {
      * 1.商品的添加
      * 2.商品缩略图
      * 3.商品详情图（list）
+     *
      * @param product
      * @param thumbnail
      * @param thumbnaiList
      * @return
      * @throws ProductOperationException
      */
-    ProductExecution addProduct(Product product,
-                                ImageHolder thumbnail,
-                                List<ImageHolder> thumbnaiList
-    ) throws ProductOperationException;
+    ProductExecution addProduct(Product product, ImageHolder thumbnail, List<ImageHolder> thumbnaiList) throws ProductOperationException;
 
     /**
      * 查询商品列表分页，可输入的条件有：商品名（模糊），商品状态，店铺Id，商品类别
+     *
      * @param productCondition
      * @param pageIndex
      * @param pageSize
@@ -46,14 +45,19 @@ public interface ProductService {
 
     /**
      * 根据商品id查询指定商品
+     *
      * @param productId
      * @return
      */
     Product getProductById(long productId);
 
-
-    ProductExecution modifyProduct(Product product,
-                                   ImageHolder thumbnail,
-                                   List<ImageHolder> thumbnaiList
-    ) throws ProductOperationException;
+    /**
+     * 编辑商品
+     * @param product
+     * @param thumbnail
+     * @param thumbnaiList
+     * @return
+     * @throws ProductOperationException
+     */
+    ProductExecution modifyProduct(Product product, ImageHolder thumbnail, List<ImageHolder> thumbnaiList) throws ProductOperationException;
 }

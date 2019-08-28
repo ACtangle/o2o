@@ -118,24 +118,24 @@ public class ProductServiceImpl implements ProductService {
                 if (tempProduct.getImgAddr() != null) {
                     ImageUtil.deleteFileOrPath(tempProduct.getImgAddr());
                 }
-                addThumbnail(product,thumbnail);
+                addThumbnail(product, thumbnail);
             }
             //如果有新存入的商品详情图，则将原先的删除，并添加新的图片
-            if (thumbnaiList!=null && thumbnaiList.size()>0){
+            if (thumbnaiList != null && thumbnaiList.size() > 0) {
                 deleteProductImgList(product.getProductId());
-                addProductImgList(product,thumbnaiList);
+                addProductImgList(product, thumbnaiList);
             }
-            try{
+            try {
                 //更新商品信息
                 int result = productDao.updateProduct(product);
-                if (result <= 0){
+                if (result <= 0) {
                     throw new ProductOperationException("更新商品信息失败");
                 }
-                return new ProductExecution(ProductStateEnum.SUCCESS,product);
-            }catch (Exception e){
+                return new ProductExecution(ProductStateEnum.SUCCESS, product);
+            } catch (Exception e) {
                 throw new ProductOperationException("更新商品信息失败" + e.getMessage());
             }
-        }else {
+        } else {
             return new ProductExecution(ProductStateEnum.EMPTY);
         }
     }
@@ -174,7 +174,7 @@ public class ProductServiceImpl implements ProductService {
         }
     }
 
-    private void deleteProductImgList(long productId){
+    private void deleteProductImgList(long productId) {
         List<ProductImg> productImgList = productImgDao.queryProductImgList(productId);
         for (ProductImg productImg : productImgList) {
             ImageUtil.deleteFileOrPath(productImg.getImgAddr());
