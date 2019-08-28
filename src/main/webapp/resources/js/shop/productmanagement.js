@@ -77,7 +77,7 @@ $(function () {
                         e.currentTarget.dataset.status);
                 } else if (target.hasClass('preview')) {
                     //如果有class preview 则点击去前台展示系统该商品详情页预览商品情况，并带有productId参数
-                    window.location.href = '/o2o/fronted/productdetail?productId='
+                    window.location.href = '/o2o/frontend/productdetail?productId='
                         + e.currentTarget.dataset.id;
                 }
             });
