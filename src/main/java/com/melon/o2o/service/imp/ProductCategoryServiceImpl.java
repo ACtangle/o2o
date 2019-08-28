@@ -1,6 +1,7 @@
 package com.melon.o2o.service.imp;
 
 import com.melon.o2o.dao.ProductCategoryDao;
+import com.melon.o2o.dao.ProductDao;
 import com.melon.o2o.dao.ShopDao;
 import com.melon.o2o.dto.ProductCategoryExecution;
 import com.melon.o2o.dto.ShopExecution;
@@ -37,6 +38,9 @@ public class ProductCategoryServiceImpl implements ProductCategoryService {
     @Autowired
     private ProductCategoryDao productCategoryDao;
 
+    @Autowired
+    private ProductDao productDao;
+
     @Override
     public List<ProductCategory> queryProductCategoryList(long shopId) {
         return productCategoryDao.queryProductCategoryList(shopId);
@@ -64,7 +68,16 @@ public class ProductCategoryServiceImpl implements ProductCategoryService {
     @Override
     @Transactional
     public ProductCategoryExecution deleteProductCategory(long productCategoryId, long shopId) throws ProductCategoryOperationException {
-        //TODO:将此商品类别下的商品的类别id置位空
+        //将此商品类别下的商品的类别id置为空,再进行分类的删除，否则会因为外键关联报错
+        //product表有某个分类下的商品，如果删除分类则报错，所以要先对产品下的分类字段进行null赋值再删除分类表
+        try {
+            int result = productDao.updateProductCategoryToNull(productCategoryId);
+            if (result<0){
+                throw new ProductCategoryOperationException("商品类别更新失败");
+            }
+        }catch (Exception e){
+            throw new ProductCategoryOperationException("deleteProductCategory error:" + e.getMessage());
+        }
         try{
             int result =  productCategoryDao.deleteProductCategory(productCategoryId,shopId);
             if (result <= 0){
