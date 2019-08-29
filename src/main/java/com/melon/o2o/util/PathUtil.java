@@ -17,10 +17,10 @@ public class PathUtil {
         String os = System.getProperty("os.name");
         String basePath = "";
         if (os.toLowerCase().startsWith("win")) {
-            basePath = "D:/projectdev/image/";
+            basePath = "D:/projectdev/image";
         } else {
 //            basePath = "/home/melon/image/";
-            basePath = "/Users/melon/Pictures/o2o/";
+            basePath = "/Users/melon/Pictures/o2o";
 
         }
         basePath = basePath.replace("/", separator);
@@ -29,7 +29,7 @@ public class PathUtil {
 
     //相对子路径
     public static String getShopImagePath(long shopId) {
-        String imagePath = "upload/item/shop/" + shopId + "/";
+        String imagePath = "/upload/item/shop/" + shopId + "/";
         return imagePath.replace("/", separator);
     }
 

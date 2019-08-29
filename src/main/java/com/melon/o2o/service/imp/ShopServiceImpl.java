@@ -4,6 +4,7 @@ import com.melon.o2o.dao.ShopDao;
 import com.melon.o2o.dto.ImageHolder;
 import com.melon.o2o.dto.ShopExecution;
 import com.melon.o2o.entity.Shop;
+import com.melon.o2o.entity.ShopCategory;
 import com.melon.o2o.enums.ShopStateEnum;
 import com.melon.o2o.exceptions.ShopOperationException;
 import com.melon.o2o.service.ShopService;
@@ -37,6 +38,9 @@ public class ShopServiceImpl implements ShopService {
     @Override
     public ShopExecution getShopList(Shop shopCondition, int pageIndex, int pageSize) {
         int rowIndex = PageCalculator.calculateRowIndex(pageIndex,pageSize);
+        if (shopCondition.getShopCategory() == null){
+            shopCondition.setShopCategory(new ShopCategory());
+        }
         List<Shop> shopList = shopDao.queryShopList(shopCondition,rowIndex,pageSize);
         int count = shopDao.queryShopCount(shopCondition);
         ShopExecution shopExecution = new ShopExecution();

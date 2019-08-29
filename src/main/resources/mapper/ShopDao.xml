@@ -51,7 +51,7 @@
                 parent_id = #{shopCondition.shopCategory.parent.shopCategoryId})
             </if>
             <if test="shopCondition.area !=null and shopCondition.area.areaId != null">
-                and s.area_id = #{shopCondtion.area.areaId}
+                and s.area_id = #{shopCondition.area.areaId}
             </if>
             <if test="shopCondition.shopName != null">
                 and s.shop_name like '%${shopCondition.shopName}%'
@@ -86,7 +86,7 @@
                 parent_id = #{shopCondition.shopCategory.parent.shopCategoryId})
             </if>
             <if test="shopCondition.area !=null and shopCondition.area.areaId != null">
-                and s.area_id = #{shopCondtion.area.areaId}
+                and s.area_id = #{shopCondition.area.areaId}
             </if>
             <if test="shopCondition.shopName != null">
                 and s.shop_name like '%${shopCondition.shopName}%'
