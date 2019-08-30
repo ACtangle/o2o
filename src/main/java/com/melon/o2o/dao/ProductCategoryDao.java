@@ -16,6 +16,14 @@ import java.util.List;
 public interface ProductCategoryDao {
 
     /**
+     * 通过employee id 查询店铺
+     *
+     * @param  shopId
+     * @return List<ProductCategory>
+     */
+    List<ProductCategory> queryByShopId(long shopId);
+
+    /**
      * 通过shopId 查询店铺商品类别
      * @param shopId
      * @return List<ProductCategory>

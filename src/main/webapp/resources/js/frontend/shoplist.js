@@ -1,7 +1,7 @@
 $(function() {
     var loading = false;
     var maxItems = 999;
-    var pageSize = 3;
+    var pageSize = 10;
     var listUrl = '/o2o/frontend/listshops';
     var searchDivUrl = '/o2o/frontend/listshoppageinfo';
     var pageNum = 1;
@@ -95,7 +95,7 @@ $(function() {
 
     $('.shop-list').on('click', '.card', function(e) {
         var shopId = e.currentTarget.dataset.shopId;
-        window.location.href = '/myo2o/frontend/shopdetail?shopId=' + shopId;
+        window.location.href = '/o2o/frontend/shopdetail?shopId=' + shopId;
     });
 
     $('#shoplist-search-div').on(

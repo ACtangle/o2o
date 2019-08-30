@@ -47,6 +47,11 @@ public class ProductCategoryServiceImpl implements ProductCategoryService {
     }
 
     @Override
+    public List<ProductCategory> getByShopId(long shopId) {
+        return productCategoryDao.queryByShopId(shopId);
+    }
+
+    @Override
     public ProductCategoryExecution batchAddProductCategory(List<ProductCategory> productCategoryList) throws ProductCategoryOperationException {
         if (productCategoryList != null && productCategoryList.size() > 0) {
             try {

@@ -11,6 +11,20 @@
         <result column="create_time" property="createTime"/>
     </resultMap>
 
+    <select id="queryByShopId" resultType="com.melon.o2o.entity.ProductCategory"
+            parameterType="Long">
+        SELECT
+        product_category_id,
+        product_category_name,
+        priority,
+        create_time,
+        shop_id
+        FROM
+        tb_product_category
+        WHERE
+        shop_id = #{shopId}
+    </select>
+
     <select id="queryProductCategoryList" resultType="com.melon.o2o.entity.ProductCategory" parameterType="Long">
         SELECT
         product_category_id,
