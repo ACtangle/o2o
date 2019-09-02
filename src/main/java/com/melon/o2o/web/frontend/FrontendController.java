@@ -30,4 +30,10 @@ public class FrontendController {
     private String shopdetail() {
         return "frontend/shopdetail";
     }
+
+    @RequestMapping(value = "/productdetail", method = RequestMethod.GET)
+    private String productdetail() {
+        return "frontend/productdetail";
+    }
+
 }

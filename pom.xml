@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.melon.o2o</groupId>
-    <artifactId>my-o2o-project</artifactId>
+    <artifactId>o2o</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>war</packaging>
 
@@ -109,6 +109,12 @@
             <artifactId>commons-io</artifactId>
             <version>2.4</version>
         </dependency>
+        <dependency>
+            <groupId>net.sf.json-lib</groupId>
+            <artifactId>json-lib</artifactId>
+            <version>2.4</version>
+            <classifier>jdk15</classifier>
+        </dependency>
 
         <!--    mybatis jar包  -->
         <dependency>
@@ -150,7 +156,7 @@
     </dependencies>
 
     <build>
-        <finalName>my-o2o-project</finalName>
+        <finalName>o2o</finalName>
         <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
             <plugins>
                 <plugin>
