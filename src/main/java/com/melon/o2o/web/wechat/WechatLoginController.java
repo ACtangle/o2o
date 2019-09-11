@@ -80,6 +80,7 @@ public class WechatLoginController {
 				e.printStackTrace();
 			}
 		}
+
 		if (user!=null) {
 		    return "frontend/index";
         }
