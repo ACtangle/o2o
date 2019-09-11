@@ -1,5 +1,7 @@
 package com.melon.o2o.service;
 
+import com.melon.o2o.entity.PersonInfo;
+
 /**
  * @ClassName PersonInfoService
  * @Description
@@ -9,5 +11,7 @@ package com.melon.o2o.service;
  */
 
 public interface PersonInfoService {
+
+    PersonInfo getPersonInfoById(Long userId);
 
 }
