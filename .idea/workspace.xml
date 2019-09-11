@@ -7,16 +7,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a705bae2-ed2a-43a9-b547-d715424f3272" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/melon/o2o/dto/WechatAuthExecution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/melon/o2o/enums/WechatAuthStateEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/melon/o2o/exceptions/WechatAuthOperationException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/test/com/melon/o2o/service/WechatAuthServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/melon/o2o/util/EncryptPropertyPlaceholderConfigurer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/melon/o2o/service/PersonInfoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/melon/o2o/service/PersonInfoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/melon/o2o/service/WechatAuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/melon/o2o/service/WechatAuthService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/melon/o2o/service/imp/PersonInfoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/melon/o2o/service/imp/PersonInfoServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/melon/o2o/service/imp/WechatAuthServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/melon/o2o/service/imp/WechatAuthServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/melon/o2o/web/wechat/WechatLoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/melon/o2o/web/wechat/WechatLoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/melon/o2o/util/DESUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/melon/o2o/util/DESUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/jdbc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/jdbc.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/spring/spring-dao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/spring/spring-dao.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -32,10 +27,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/melon/o2o/web/wechat/WechatLoginController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/melon/o2o/util/DESUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="290">
-              <caret line="70" column="45" lean-forward="true" selection-start-line="70" selection-start-column="45" selection-end-line="70" selection-end-column="45" />
+            <state relative-caret-position="444">
+              <caret line="63" column="49" selection-start-line="63" selection-start-column="49" selection-end-line="63" selection-end-column="49" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -43,14 +38,29 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/melon/o2o/util/wechat/WeiXinUserUtil.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/melon/o2o/util/EncryptPropertyPlaceholderConfigurer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="485">
-              <caret line="45" column="51" lean-forward="true" selection-start-line="45" selection-start-column="51" selection-end-line="45" selection-end-column="51" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="68">
+              <caret line="4" column="49" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="49" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/spring/spring-dao.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="17" column="54" selection-start-line="17" selection-start-column="54" selection-end-line="17" selection-end-column="54" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/jdbc.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" selection-start-line="9" selection-end-line="9" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -117,9 +127,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/fronted/index.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/resources/js/frontend/index.js" />
-        <option value="$PROJECT_DIR$/src/main/resources/mapper/ShopCategoryDao.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/melon/o2o/web/frontend/ShopListController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/frontend/shoplist.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/resources/js/common/common.js" />
@@ -140,7 +147,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/melon/o2o/web/wechat/WeiXinController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/melon/o2o/web/wechat/WechatController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/melon/o2o/util/wechat/message/req/WechatInfo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/melon/o2o/util/DESUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/melon/o2o/util/wechat/message/pojo/UserAccessToken.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/melon/o2o/util/wechat/WeiXinUser.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/melon/o2o/util/wechat/WeixinUtil.java" />
@@ -168,6 +174,10 @@
         <option value="$PROJECT_DIR$/src/main/java/com/melon/o2o/service/imp/PersonInfoServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/melon/o2o/web/wechat/WechatLoginController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/melon/o2o/util/wechat/WeiXinUserUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/melon/o2o/util/DESUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/jdbc.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/melon/o2o/util/EncryptPropertyPlaceholderConfigurer.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/spring/spring-dao.xml" />
       </list>
     </option>
   </component>
@@ -324,16 +334,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="o2o" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-              <item name="wechat" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="o2o" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myo2oproject" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="o2o" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -370,6 +370,14 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="mapper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="o2o" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myo2oproject" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="o2o" type="b2602c69:ProjectViewProjectNode" />
@@ -476,7 +484,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="extract.method.default.visibility" value="private" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/mapper" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/melon/o2o/util" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -512,9 +520,9 @@
       <recent name="com.melon.o2o.dto" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/com/melon/o2o/util" />
       <recent name="$PROJECT_DIR$/src/main/resources/mapper" />
       <recent name="$PROJECT_DIR$/src/main/java/com/melon/o2o/util/baidu" />
-      <recent name="$PROJECT_DIR$/src/main/java/com/melon/o2o/util" />
       <recent name="$PROJECT_DIR$/src/main/java/com/melon/o2o/util/wechat" />
       <recent name="$PROJECT_DIR$/src/main/java/com/melon/o2o/web/wechat" />
     </key>
@@ -531,19 +539,16 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Tomcat Server.47.92.26.86">
-    <configuration name="PersonInfoDaoTest.insertPersonInfo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Tomcat Server.Tomcat 8.5.43">
+    <configuration name="DESUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.melon.o2o.util.DESUtils" />
       <module name="o2o" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.melon.o2o.dao.*" />
+          <option name="PATTERN" value="com.melon.o2o.util.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.melon.o2o.dao" />
-      <option name="MAIN_CLASS_NAME" value="com.melon.o2o.dao.PersonInfoDaoTest" />
-      <option name="METHOD_NAME" value="insertPersonInfo" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -888,7 +893,6 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.PersonInfoDaoTest.insertPersonInfo" />
       <item itemvalue="JUnit.PersonInfoDaoTest.queryPersonInfoById" />
       <item itemvalue="JUnit.WechatAuthDaoTest.insertWechatAuth" />
       <item itemvalue="JUnit.WechatAuthDaoTest.queryWechatInfoByOpenId" />
@@ -896,14 +900,15 @@
       <item itemvalue="Tomcat Server.47.92.26.86" />
       <item itemvalue="Tomcat Server.Tomcat 7.0.94" />
       <item itemvalue="Tomcat Server.Tomcat 8.5.43" />
+      <item itemvalue="Application.DESUtils" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.DESUtils" />
         <item itemvalue="JUnit.WechatAuthServiceTest.register" />
         <item itemvalue="JUnit.WechatAuthDaoTest.queryWechatInfoByOpenId" />
         <item itemvalue="JUnit.WechatAuthDaoTest.insertWechatAuth" />
         <item itemvalue="JUnit.PersonInfoDaoTest.queryPersonInfoById" />
-        <item itemvalue="JUnit.PersonInfoDaoTest.insertPersonInfo" />
       </list>
     </recent_temporary>
   </component>
@@ -932,7 +937,7 @@
       <workItem from="1566992733520" duration="26082000" />
       <workItem from="1567357424688" duration="7982000" />
       <workItem from="1757371984542" duration="2098000" />
-      <workItem from="1568107955276" duration="7505000" />
+      <workItem from="1568107955276" duration="8678000" />
     </task>
     <task id="LOCAL-00001" summary="创建所有实体类">
       <created>1565945360356</created>
@@ -1242,7 +1247,14 @@
       <option name="project" value="LOCAL" />
       <updated>1568170597467</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="微信账户登录">
+      <created>1568176151171</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1568176151171</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1278,7 +1290,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="229936000" />
+    <option name="totallyTimeSpent" value="231109000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1332,7 +1344,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="店铺编辑开发" />
     <MESSAGE value="修改前端bug" />
     <MESSAGE value="修改bug： 店铺编辑时，未传入图片时也可以通过" />
     <MESSAGE value="店铺列表分页mapper" />
@@ -1357,33 +1368,14 @@
     <MESSAGE value="微信授权登录" />
     <MESSAGE value="产品详情页" />
     <MESSAGE value="personInfo与wechatAuth的dao单元测试完成" />
-    <option name="LAST_COMMIT_MESSAGE" value="personInfo与wechatAuth的dao单元测试完成" />
+    <MESSAGE value="微信账户登录" />
+    <option name="LAST_COMMIT_MESSAGE" value="微信账户登录" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/melon/o2o/util/wechat/message/req/WechatInfo.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/melon/o2o/util/wechat/MyX509TrustManager.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/melon/o2o/util/wechat/message/resp/TextMessage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="33" column="2" lean-forward="true" selection-start-line="33" selection-start-column="2" selection-end-line="33" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/src.zip!/java/net/URLEncoder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="81" column="13" selection-start-line="81" selection-start-column="13" selection-end-line="81" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/melon/o2o/web/frontend/ShopDetailController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="16">
@@ -1696,16 +1688,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/melon/o2o/web/wechat/WechatLoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="70" column="45" lean-forward="true" selection-start-line="70" selection-start-column="45" selection-end-line="70" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/melon/o2o/util/wechat/WeixinUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-476">
@@ -1716,9 +1698,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/jdbc.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis-config.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1727,11 +1706,59 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/melon/o2o/util/wechat/WeiXinUserUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="485">
-          <caret line="45" column="51" lean-forward="true" selection-start-line="45" selection-start-column="51" selection-end-line="45" selection-end-column="51" />
+        <state relative-caret-position="799">
+          <caret line="47" column="62" lean-forward="true" selection-start-line="47" selection-start-column="62" selection-end-line="47" selection-end-column="62" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/melon/o2o/web/wechat/WechatLoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="545">
+          <caret line="85" column="68" selection-start-line="85" selection-start-column="68" selection-end-line="85" selection-end-column="68" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/src.zip!/java/security/SecureRandom.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="328">
+          <caret line="285" column="31" selection-start-line="285" selection-start-column="31" selection-end-line="285" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/melon/o2o/util/DESUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="444">
+          <caret line="63" column="49" selection-start-line="63" selection-start-column="49" selection-end-line="63" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/jdbc.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" selection-start-line="9" selection-end-line="9" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/melon/o2o/util/EncryptPropertyPlaceholderConfigurer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="49" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/spring/spring-dao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="54" selection-start-line="17" selection-start-column="54" selection-end-line="17" selection-end-column="54" />
         </state>
       </provider>
     </entry>
