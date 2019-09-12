@@ -14,11 +14,15 @@ public class AreaServiceTest extends BaseTest {
 
     @Autowired
     private AreaService areaService;
+    @Autowired
+    private CacheService cacheService;
 
     @Test
     public void getAreaList() {
         List<Area> areaList = areaService.getAreaList();
         System.out.println(areaList);
-        assertEquals("新港中",areaList.get(0).getAreaName());
+        assertEquals("新港中", areaList.get(0).getAreaName());
+        cacheService.removeFromCache(AreaService.AREALISTKEY);
+        areaList = areaService.getAreaList();
     }
 }

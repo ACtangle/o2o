@@ -15,7 +15,7 @@ public class JedisPoolWriper {
 	public JedisPoolWriper(final JedisPoolConfig poolConfig, final String host,
 			final int port) {
 		try {
-			jedisPool = new JedisPool(poolConfig, host, port);
+			jedisPool = new JedisPool(poolConfig, host, port,2000,"melon");
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
