@@ -1,6 +1,6 @@
 $(function () {
 
-    var url = '/o2o/frontend/listmainpageinfo'
+    var url = '/o2o/frontend/listmainpageinfo';
 
     $.getJSON(url, function (data) {
         if (data.success) {
