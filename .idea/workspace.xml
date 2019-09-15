@@ -7,11 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a705bae2-ed2a-43a9-b547-d715424f3272" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/local/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/local/login.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/local/logout.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/local/changepsw.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/local/changepsw.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/melon/o2o/web/Local/LocalController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/melon/o2o/web/Local/LocalController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/shop/shoplist.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/shop/shoplist.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -27,38 +25,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/html/shop/shoplist.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="555">
-              <caret line="43" column="60" selection-start-line="43" selection-start-column="60" selection-end-line="43" selection-end-column="60" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/local/logout.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="13" lean-forward="true" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+            <state relative-caret-position="623">
+              <caret line="47" column="18" lean-forward="true" selection-start-line="47" selection-start-column="18" selection-end-line="47" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/melon/o2o/web/Local/LocalController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/html/local/changepsw.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
-              <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#457#458#0" expanded="true" />
-                <element signature="e#496#497#0" expanded="true" />
-                <element signature="e#653#654#0" expanded="true" />
-                <element signature="e#695#696#0" expanded="true" />
-                <element signature="e#777#778#0" expanded="true" />
-                <element signature="e#813#814#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="-6">
+              <caret line="65" column="79" selection-start-line="65" selection-start-column="79" selection-end-line="65" selection-end-column="79" />
             </state>
           </provider>
         </entry>
@@ -66,11 +46,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/melon/o2o/web/Local/LocalAuthController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
-              <caret line="128" column="9" lean-forward="true" selection-start-line="128" selection-start-column="9" selection-end-line="128" selection-end-column="9" />
+            <state relative-caret-position="363">
+              <caret line="71" column="44" selection-start-line="71" selection-start-column="30" selection-end-line="71" selection-end-column="44" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/local/changepsw.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="888">
+              <caret line="57" column="46" selection-start-line="57" selection-start-column="46" selection-end-line="57" selection-end-column="46" />
             </state>
           </provider>
         </entry>
@@ -138,8 +127,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/melon/o2o/util/DESUtils.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/jdbc.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/melon/o2o/util/EncryptPropertyPlaceholderConfigurer.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/melon/o2o/cache/JedisUtil.java" />
         <option value="$PROJECT_DIR$/target/my-o2o-project/WEB-INF/classes/spring/spring-redis.xml" />
@@ -185,10 +172,12 @@
         <option value="$PROJECT_DIR$/src/main/webapp/resources/js/local/accountBind.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/local/ownerlogin.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/local/login.html" />
-        <option value="$PROJECT_DIR$/src/main/java/com/melon/o2o/web/Local/LocalController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/resources/js/local/login.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/shop/shoplist.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/resources/js/local/logout.js" />
+        <option value="$PROJECT_DIR$/src/main/java/com/melon/o2o/web/Local/LocalController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/local/changepsw.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/resources/js/local/changepsw.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/shop/shoplist.html" />
       </list>
     </option>
   </component>
@@ -570,7 +559,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="extract.method.default.visibility" value="private" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/local" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/resources/js/local" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -606,9 +595,9 @@
       <recent name="com.melon.o2o.service.imp" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/webapp/resources/js/local" />
       <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/local" />
       <recent name="$PROJECT_DIR$/src/main/java/com/melon/o2o/web/Local" />
-      <recent name="$PROJECT_DIR$/src/main/webapp/resources/js/local" />
       <recent name="$PROJECT_DIR$/src/main/java/com/melon/o2o/util" />
       <recent name="$PROJECT_DIR$/src/main/resources/mapper" />
     </key>
@@ -963,14 +952,7 @@
       <workItem from="1567357424688" duration="7982000" />
       <workItem from="1757371984542" duration="2098000" />
       <workItem from="1568107955276" duration="8678000" />
-      <workItem from="1568185407758" duration="53726000" />
-    </task>
-    <task id="LOCAL-00002" summary="整合springmvc+mybatis，数据库配置的是8.0+版本的mysql">
-      <created>1565954913404</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1565954913404</updated>
+      <workItem from="1568185407758" duration="55368000" />
     </task>
     <task id="LOCAL-00003" summary="logback配置">
       <created>1565988485949</created>
@@ -1308,7 +1290,14 @@
       <option name="project" value="LOCAL" />
       <updated>1568479173561</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="后端登录登出">
+      <created>1568523217595</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1568523217595</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1344,7 +1333,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="284994000" />
+    <option name="totallyTimeSpent" value="286636000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1399,7 +1388,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="批量提交商品分类接口开发" />
     <MESSAGE value="批量提交商品分类前端开发并联调完成" />
     <MESSAGE value="商品分类模块开发完成" />
     <MESSAGE value="商品模块dao完成，单元测试通过" />
@@ -1424,7 +1412,20 @@
     <MESSAGE value="修改微信登录后后台系统无法展示bug" />
     <MESSAGE value="localAuth 本地账户dao和service开发绑定平台账号和新增" />
     <MESSAGE value="账号绑定开发" />
-    <option name="LAST_COMMIT_MESSAGE" value="账号绑定开发" />
+    <MESSAGE value="后端登录登出" />
+    <option name="LAST_COMMIT_MESSAGE" value="后端登录登出" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/melon/o2o/web/Local/LocalAuthController.java</url>
+          <line>75</line>
+          <properties />
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -1436,16 +1437,6 @@
     </SUITE>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/target/o2o/resources/js/shop/shoplist.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/melon/o2o/web/shopadmin/ShopAdminController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/melon/o2o/web/shopadmin/ProductManagementController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="311">
@@ -1756,20 +1747,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/melon/o2o/web/Local/LocalAuthController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/local/logout.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="128" column="9" lean-forward="true" selection-start-line="128" selection-start-column="9" selection-end-line="128" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="374">
+          <caret line="22" column="3" lean-forward="true" selection-start-line="22" selection-start-column="3" selection-end-line="22" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/html/local/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="759">
+          <caret line="83" selection-start-line="83" selection-end-line="84" selection-end-column="76" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/melon/o2o/web/Local/LocalController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+        <state relative-caret-position="425">
+          <caret line="25" column="21" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#457#458#0" expanded="true" />
@@ -1782,31 +1777,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/local/login.js">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/html/local/changepsw.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="37" column="69" lean-forward="true" selection-start-line="37" selection-end-line="38" />
+        <state relative-caret-position="-6">
+          <caret line="65" column="79" selection-start-line="65" selection-start-column="79" selection-end-line="65" selection-end-column="79" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/html/local/login.html">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/local/login.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="46" column="34" selection-start-line="46" selection-start-column="24" selection-end-line="46" selection-end-column="34" />
+        <state relative-caret-position="504">
+          <caret line="30" column="48" lean-forward="true" selection-start-line="30" selection-start-column="48" selection-end-line="30" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/local/changepsw.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="888">
+          <caret line="57" column="46" selection-start-line="57" selection-start-column="46" selection-end-line="57" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/melon/o2o/web/Local/LocalAuthController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="71" column="44" selection-start-line="71" selection-start-column="30" selection-end-line="71" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/html/shop/shoplist.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="43" column="60" selection-start-line="43" selection-start-column="60" selection-end-line="43" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/local/logout.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="13" lean-forward="true" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        <state relative-caret-position="623">
+          <caret line="47" column="18" lean-forward="true" selection-start-line="47" selection-start-column="18" selection-end-line="47" selection-end-column="18" />
         </state>
       </provider>
     </entry>
