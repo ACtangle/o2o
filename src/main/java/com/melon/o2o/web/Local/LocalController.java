@@ -26,5 +26,10 @@ public class LocalController {
         return "local/changepsw";
     }
 
+    @RequestMapping(value = "/login", method = RequestMethod.GET)
+    private String login() {
+        return "local/login";
+    }
+
 
 }

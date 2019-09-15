@@ -6,12 +6,12 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a705bae2-ed2a-43a9-b547-d715424f3272" name="Default Changelist" comment="localAuth 本地账户dao和service开发绑定平台账号和新增">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/melon/o2o/web/Local/LocalAuthController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/melon/o2o/web/Local/LocalController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/local/accountBind.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/local/accountBind.js" afterDir="false" />
+    <list default="true" id="a705bae2-ed2a-43a9-b547-d715424f3272" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/local/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/local/login.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/local/logout.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/melon/o2o/web/Local/LocalController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/melon/o2o/web/Local/LocalController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/shop/shoplist.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/shop/shoplist.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -30,8 +30,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/html/shop/shoplist.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="589">
-              <caret line="38" column="24" selection-start-line="38" selection-start-column="24" selection-end-line="38" selection-end-column="24" />
+            <state relative-caret-position="555">
+              <caret line="43" column="60" selection-start-line="43" selection-start-column="60" selection-end-line="43" selection-end-column="60" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/local/logout.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="16" column="13" lean-forward="true" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -39,54 +48,29 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/melon/o2o/web/Local/LocalController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="25" column="33" lean-forward="true" selection-start-line="25" selection-start-column="33" selection-end-line="25" selection-end-column="33" />
+            <state relative-caret-position="595">
+              <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#457#458#0" expanded="true" />
                 <element signature="e#496#497#0" expanded="true" />
                 <element signature="e#653#654#0" expanded="true" />
                 <element signature="e#695#696#0" expanded="true" />
+                <element signature="e#777#778#0" expanded="true" />
+                <element signature="e#813#814#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/html/local/accountBind.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="339">
-              <caret line="52" column="45" selection-start-line="52" selection-start-column="36" selection-end-line="52" selection-end-column="45" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/melon/o2o/web/Local/LocalAuthController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="623">
-              <caret line="51" selection-start-line="51" selection-end-line="51" />
+            <state relative-caret-position="351">
+              <caret line="128" column="9" lean-forward="true" selection-start-line="128" selection-start-column="9" selection-end-line="128" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/melon/o2o/util/CodeUtil.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="26" selection-start-line="26" selection-end-line="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/local/accountBind.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="44" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -101,10 +85,10 @@
         <option value="CSS File" />
         <option value="Enum" />
         <option value="HTML File" />
-        <option value="JavaScript File" />
         <option value="Interface" />
         <option value="JUnit4 Test Class" />
         <option value="Class" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -154,10 +138,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/test/com/melon/o2o/service/WechatAuthServiceTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/melon/o2o/service/PersonInfoService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/melon/o2o/service/imp/PersonInfoServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/melon/o2o/util/wechat/WeiXinUserUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/melon/o2o/util/DESUtils.java" />
         <option value="$PROJECT_DIR$/src/main/resources/jdbc.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/melon/o2o/util/EncryptPropertyPlaceholderConfigurer.java" />
@@ -203,8 +183,12 @@
         <option value="$PROJECT_DIR$/src/main/java/com/melon/o2o/web/Local/LocalAuthController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/local/accountBind.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/resources/js/local/accountBind.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/local/ownerlogin.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/local/login.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/melon/o2o/web/Local/LocalController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/resources/js/local/login.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/shop/shoplist.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/resources/js/local/logout.js" />
       </list>
     </option>
   </component>
@@ -586,7 +570,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="extract.method.default.visibility" value="private" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/resources/js/local" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/local" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -622,11 +606,11 @@
       <recent name="com.melon.o2o.service.imp" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/webapp/resources/js/local" />
       <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/local" />
+      <recent name="$PROJECT_DIR$/src/main/java/com/melon/o2o/web/Local" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/resources/js/local" />
       <recent name="$PROJECT_DIR$/src/main/java/com/melon/o2o/util" />
       <recent name="$PROJECT_DIR$/src/main/resources/mapper" />
-      <recent name="$PROJECT_DIR$/target/o2o/WEB-INF/lib" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -979,14 +963,7 @@
       <workItem from="1567357424688" duration="7982000" />
       <workItem from="1757371984542" duration="2098000" />
       <workItem from="1568107955276" duration="8678000" />
-      <workItem from="1568185407758" duration="48356000" />
-    </task>
-    <task id="LOCAL-00001" summary="创建所有实体类">
-      <created>1565945360356</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1565945360356</updated>
+      <workItem from="1568185407758" duration="53726000" />
     </task>
     <task id="LOCAL-00002" summary="整合springmvc+mybatis，数据库配置的是8.0+版本的mysql">
       <created>1565954913404</created>
@@ -1324,7 +1301,14 @@
       <option name="project" value="LOCAL" />
       <updated>1568277368986</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="账号绑定开发">
+      <created>1568479173559</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1568479173561</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1360,7 +1344,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="279624000" />
+    <option name="totallyTimeSpent" value="284994000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1408,14 +1392,13 @@
       <window_info anchor="right" id="Database" order="7" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info anchor="right" id="Theme Preview" order="9" />
-      <window_info active="true" anchor="right" id="Debug" order="10" sideWeight="0.72756153" visible="true" weight="0.32446387" />
+      <window_info active="true" anchor="right" id="Debug" order="10" sideWeight="0.72756153" visible="true" weight="0.37609214" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="添加前端部分未显示控件" />
     <MESSAGE value="批量提交商品分类接口开发" />
     <MESSAGE value="批量提交商品分类前端开发并联调完成" />
     <MESSAGE value="商品分类模块开发完成" />
@@ -1440,19 +1423,8 @@
     <MESSAGE value="redis对变化不大的数据进行redis缓存存储，并实现一个cache接口用于删除key" />
     <MESSAGE value="修改微信登录后后台系统无法展示bug" />
     <MESSAGE value="localAuth 本地账户dao和service开发绑定平台账号和新增" />
-    <option name="LAST_COMMIT_MESSAGE" value="localAuth 本地账户dao和service开发绑定平台账号和新增" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/melon/o2o/web/Local/LocalAuthController.java</url>
-          <line>38</line>
-          <properties />
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="账号绑定开发" />
+    <option name="LAST_COMMIT_MESSAGE" value="账号绑定开发" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -1464,34 +1436,6 @@
     </SUITE>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/test/com/melon/o2o/service/WechatAuthServiceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/melon/o2o/web/frontend/ShopListController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/frontend/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/shop/productoperation.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/target/o2o/resources/js/shop/shoplist.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1772,27 +1716,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/melon/o2o/web/Local/LocalController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="33" lean-forward="true" selection-start-line="25" selection-start-column="33" selection-end-line="25" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#457#458#0" expanded="true" />
-            <element signature="e#496#497#0" expanded="true" />
-            <element signature="e#653#654#0" expanded="true" />
-            <element signature="e#695#696#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/html/shop/shoplist.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="589">
-          <caret line="38" column="24" selection-start-line="38" selection-start-column="24" selection-end-line="38" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.7.RELEASE/spring-web-4.3.7.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="328">
@@ -1807,34 +1730,83 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/html/local/accountBind.html">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/melon/o2o/web/Local/login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="52" column="45" selection-start-line="52" selection-start-column="36" selection-end-line="52" selection-end-column="45" />
-        </state>
+        <state relative-caret-position="-618" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/local/accountBind.js">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/html/local/accountBind.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="44" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="44" />
+        <state relative-caret-position="594">
+          <caret line="72" column="18" lean-forward="true" selection-start-line="72" selection-start-column="18" selection-end-line="72" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/melon/o2o/util/CodeUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
+        <state relative-caret-position="289">
+          <caret line="21" column="106" selection-start-line="21" selection-start-column="90" selection-end-line="21" selection-end-column="106" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/local/accountBind.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/melon/o2o/web/Local/LocalAuthController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="623">
-          <caret line="51" selection-start-line="51" selection-end-line="51" />
+        <state relative-caret-position="351">
+          <caret line="128" column="9" lean-forward="true" selection-start-line="128" selection-start-column="9" selection-end-line="128" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/melon/o2o/web/Local/LocalController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#457#458#0" expanded="true" />
+            <element signature="e#496#497#0" expanded="true" />
+            <element signature="e#653#654#0" expanded="true" />
+            <element signature="e#695#696#0" expanded="true" />
+            <element signature="e#777#778#0" expanded="true" />
+            <element signature="e#813#814#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/local/login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="37" column="69" lean-forward="true" selection-start-line="37" selection-end-line="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/html/local/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="46" column="34" selection-start-line="46" selection-start-column="24" selection-end-line="46" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/html/shop/shoplist.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="43" column="60" selection-start-line="43" selection-start-column="60" selection-end-line="43" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/local/logout.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="13" lean-forward="true" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
         </state>
       </provider>
     </entry>
