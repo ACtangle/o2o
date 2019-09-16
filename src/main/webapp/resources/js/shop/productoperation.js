@@ -118,22 +118,22 @@ $(function () {
         }
         //将数据提交到后台处理相关操作
         $.ajax({
-                url: productPostUrl,
-                type: 'POST',
-                dataType: 'json',
-                data: formData,
-                contentType: false,
-                processData: false,
-                cache: false,
-                success: function (data) {
-                    if (data.success) {
-                        $.toast("提交成功!");
-                        $('#captcha_img').click();
-                    } else {
-                        $.toast("提交失败!");
-                        $('#captcha_img').click();
-                    }
+            url: productPostUrl,
+            type: 'POST',
+            dataType: 'json',
+            data: formData,
+            contentType: false,
+            processData: false,
+            cache: false,
+            success: function (data) {
+                if (data.success) {
+                    $.toast("提交成功!");
+                    $('#captcha_img').click();
+                } else {
+                    $.toast("提交失败!");
+                    $('#captcha_img').click();
                 }
-            });
+            }
+        });
     })
 });

@@ -44,7 +44,10 @@ public class ProductDaoTest extends BaseTest {
     @Test
     public void testDQueryProductByProductId() {
         Product product = null;
-        product = productDao.queryProductByProductId(1L);
+        product = productDao.queryProductByProductId(16L);
+        for (int i = 0;i<product.getProductImgList().size();i++){
+            System.out.println(product.getProductImgList().get(i).getImgAddr());
+        }
         assertNotEquals(null,product);
     }
 

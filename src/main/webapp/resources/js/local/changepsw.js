@@ -10,7 +10,7 @@ $(function () {
         var newPassword = $('#newPassword').val();
         var confirmPassword = $('#confirmPassword').val();
 
-        if (newPassword != confirmPassword){
+        if (newPassword != confirmPassword) {
             $.toast("两次输入的新密码不一致");
             return;
         }

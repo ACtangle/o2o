@@ -7,13 +7,12 @@ $(function () {
     var registerShopUrl = '/o2o/shopadmin/registershop';
     var shopInfoUrl = '/o2o/shopadmin/getshopbyid?shopId=' + shopId;
     var editShopUrl = '/o2o/shopadmin/modifyshop';
-    
+
     if (!isEdit) {
         getShopInitInfo();
-    }else {
+    } else {
         getShopInfo(shopId);
     }
-    
 
 
     function getShopInfo(shopId) {
@@ -28,13 +27,13 @@ $(function () {
                     shop.shopCategory.shopCategoryId + '" selected>' +
                     shop.shopCategory.shopCategoryName + '</option>';
                 var tempAreaHtml = '';
-                data.areaList.map(function (item,index) {
-                   tempAreaHtml += '<option data-id= "' + item.areaId + '">' + item.areaName + '</option>';
+                data.areaList.map(function (item, index) {
+                    tempAreaHtml += '<option data-id= "' + item.areaId + '">' + item.areaName + '</option>';
                 });
                 $('#shop-category').html(shopCategory);
-                $('#shop-category').attr('disabled','disabled');
+                $('#shop-category').attr('disabled', 'disabled');
                 $('#area').html(tempAreaHtml);
-                $("#area option[data-id='" + shop.area.areaId + "']").attr("selected","selected");
+                $("#area option[data-id='" + shop.area.areaId + "']").attr("selected", "selected");
             }
         });
     }
@@ -61,7 +60,7 @@ $(function () {
     $('#submit').click(function () {
         //获取表单信息
         var shop = {};
-        if (isEdit){
+        if (isEdit) {
             shop.shopId = shopId;
         }
         shop.shopName = $('#shop-name').val();
@@ -91,7 +90,7 @@ $(function () {
         }
         formData.append('verifyCodeActual', verifyCodeActual);
         $.ajax({
-            url: (isEdit?editShopUrl:registerShopUrl),
+            url: (isEdit ? editShopUrl : registerShopUrl),
             type: 'POST',
             dataType: 'json',
             data: formData,

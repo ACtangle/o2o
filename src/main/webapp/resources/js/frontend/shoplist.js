@@ -1,4 +1,4 @@
-$(function() {
+$(function () {
     var loading = false;
     var maxItems = 999;
     var pageSize = 10;
@@ -15,13 +15,13 @@ $(function() {
         $
             .getJSON(
                 url,
-                function(data) {
+                function (data) {
                     if (data.success) {
                         var shopCategoryList = data.shopCategoryList;
                         var html = '';
                         html += '<a href="#" class="button" data-category-id=""> 全部类别  </a>';
                         shopCategoryList
-                            .map(function(item, index) {
+                            .map(function (item, index) {
                                 html += '<a href="#" class="button" data-category-id='
                                     + item.shopCategoryId
                                     + '>'
@@ -31,7 +31,7 @@ $(function() {
                         $('#shoplist-search-div').html(html);
                         var selectOptions = '<option value="">全部街道</option>';
                         var areaList = data.areaList;
-                        areaList.map(function(item, index) {
+                        areaList.map(function (item, index) {
                             selectOptions += '<option value="'
                                 + item.areaId + '">'
                                 + item.areaName + '</option>';
@@ -40,6 +40,7 @@ $(function() {
                     }
                 });
     }
+
     getSearchDivData();
 
     function addItems(pageSize, pageIndex) {
@@ -48,11 +49,11 @@ $(function() {
             + pageSize + '&parentId=' + parentId + '&areaId=' + areaId
             + '&shopCategoryId=' + shopCategoryId + '&shopName=' + shopName;
         loading = true;
-        $.getJSON(url, function(data) {
+        $.getJSON(url, function (data) {
             if (data.success) {
                 maxItems = data.count;
                 var html = '';
-                data.shopList.map(function(item, index) {
+                data.shopList.map(function (item, index) {
                     html += '' + '<div class="card" data-shop-id="'
                         + item.shopId + '">' + '<div class="card-header">'
                         + item.shopName + '</div>'
@@ -79,7 +80,7 @@ $(function() {
                     // $('.infinite-scroll-preloader').remove();
                     //隐藏提示符
                     $('.infinite-scroll-preloader').hide();
-                }else {
+                } else {
                     $('.infinite-scroll-preloader').show();
 
                 }
@@ -89,16 +90,17 @@ $(function() {
             }
         });
     }
+
     // 预先加载20条
     addItems(pageSize, pageNum);
 
-    $(document).on('infinite', '.infinite-scroll-bottom', function() {
+    $(document).on('infinite', '.infinite-scroll-bottom', function () {
         if (loading)
             return;
         addItems(pageSize, pageNum);
     });
 
-    $('.shop-list').on('click', '.card', function(e) {
+    $('.shop-list').on('click', '.card', function (e) {
         var shopId = e.currentTarget.dataset.shopId;
         window.location.href = '/o2o/frontend/shopdetail?shopId=' + shopId;
     });
@@ -106,7 +108,7 @@ $(function() {
     $('#shoplist-search-div').on(
         'click',
         '.button',
-        function(e) {
+        function (e) {
             if (parentId) {// 如果传递过来的是一个父类下的子类
                 shopCategoryId = e.target.dataset.categoryId;
                 if ($(e.target).hasClass('button-fill')) {
@@ -136,21 +138,21 @@ $(function() {
 
         });
 
-    $('#search').on('change', function(e) {
+    $('#search').on('change', function (e) {
         shopName = e.target.value;
         $('.list-div').empty();
         pageNum = 1;
         addItems(pageSize, pageNum);
     });
 
-    $('#area-search').on('change', function() {
+    $('#area-search').on('change', function () {
         areaId = $('#area-search').val();
         $('.list-div').empty();
         pageNum = 1;
         addItems(pageSize, pageNum);
     });
 
-    $('#me').click(function() {
+    $('#me').click(function () {
         $.openPanel('#panel-left-demo');
     });
 

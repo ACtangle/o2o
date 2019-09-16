@@ -53,10 +53,10 @@ $(function () {
 
     //若点击底部按钮，即"我的"，则显示侧栏
     $('#me').click(function () {
-       $.openPanel('#panel-left-demo');
+        $.openPanel('#panel-left-demo');
     });
 
-    $('.row').on('click','.shop-classify',function (e) {
+    $('.row').on('click', '.shop-classify', function (e) {
         var shopCategoryId = e.currentTarget.dataset.category;
         var newUrl = '/o2o/frontend/shoplist?parentId=' + shopCategoryId;
         window.location.href = newUrl;
