@@ -80,6 +80,8 @@ public class ShopManagementController {
     private Map<String,Object> getShopList(HttpServletRequest request) {
         Map<String, Object> modelMap = new HashMap<>();
         PersonInfo user  = (PersonInfo)request.getSession().getAttribute("user");
+        //清除currentShop session
+        request.getSession().setAttribute("currentShop",null);
         try {
             Shop shopCondition = new Shop();
             shopCondition.setShopCategory(new ShopCategory());

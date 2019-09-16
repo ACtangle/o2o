@@ -1,52 +1,33 @@
 package com.melon.o2o.interceptor.shopadmin;
 
-import com.melon.o2o.entity.PersonInfo;
-import org.springframework.web.servlet.HandlerInterceptor;
-import org.springframework.web.servlet.ModelAndView;
+import java.io.PrintWriter;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.io.PrintWriter;
 
-/**
- * @ClassName ShopLoginInterceptor
- * @Description 店铺管理系统登录拦截器
- * @Author melon
- * @Date 2019-09-16 12:14
- * @Version
- */
+import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
 
-public class ShopLoginInterceptor implements HandlerInterceptor {
+import com.melon.o2o.entity.PersonInfo;
 
-
+public class ShopLoginInterceptor extends HandlerInterceptorAdapter {
     @Override
-    public boolean preHandle(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, Object o) throws Exception {
-
-        Object userObj = httpServletRequest.getSession().getAttribute("user");
+    public boolean preHandle(HttpServletRequest request,
+                             HttpServletResponse response, Object handler) throws Exception {
+        Object userObj = request.getSession().getAttribute("user");
         if (userObj != null) {
             PersonInfo user = (PersonInfo) userObj;
-            if (user != null && user.getUserId() != null && user.getEnableStatus() == 1) {
+            if (user != null && user.getUserId() != null
+                    && user.getUserId() > 0 && user.getEnableStatus() == 1) {
                 return true;
             }
         }
-
-        //若不满足验证界面
-        PrintWriter out = httpServletResponse.getWriter();
+        PrintWriter out = response.getWriter();
         out.println("<html>");
         out.println("<script>");
-        out.println("window.open('" + httpServletRequest.getContextPath() + "/local/login?usertype=2','_self')");
+        out.println("window.open ('" + request.getContextPath()
+                + "/local/login?usertype=2','_self')");
         out.println("</script>");
         out.println("</html>");
         return false;
-    }
-
-    @Override
-    public void postHandle(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, Object o, ModelAndView modelAndView) throws Exception {
-
-    }
-
-    @Override
-    public void afterCompletion(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, Object o, Exception e) throws Exception {
-
     }
 }
