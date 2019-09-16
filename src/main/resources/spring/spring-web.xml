@@ -9,7 +9,7 @@
 	    http://www.springframework.org/schema/context
 	    http://www.springframework.org/schema/context/spring-context.xsd
 	    http://www.springframework.org/schema/mvc
-	    http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd">
+	    http://www.springframework.org/schema/mvc/spring-mvc-3.2.xsd">
 
     <!-- 启用基于Spring 基于 annotation的DI，使用户可以在Spring MVC中使用Spring的强大功能
         激活@Required @Autowired @Resource这样的注解。
@@ -22,6 +22,31 @@
 
     <!-- 扫描包 -->
     <context:component-scan base-package="com.melon.o2o.web"/>
+
+    <!-- 权限拦截器-->
+    <mvc:interceptors>
+        <!-- 检验是否登录的拦截器 -->
+        <mvc:interceptor>
+            <mvc:mapping path="/shopadmin/**"/>
+            <bean id="ShopInterceptor" class="com.melon.o2o.interceptor.shopadmin.ShopLoginInterceptor"></bean>
+        </mvc:interceptor>
+        <!-- 检验是否对该店铺有操作权限的拦截器 -->
+        <mvc:interceptor>
+            <mvc:mapping path="/shopadmin/**"/>
+            <!-- shoplist page-->
+            <mvc:exclude-mapping path="/shopadmin/shoplist"/>
+            <mvc:exclude-mapping path="/shopadmin/getshoplist"/>
+            <!-- shopregister page-->
+            <mvc:exclude-mapping path="/shopadmin/getshopinitinfo"/>
+            <mvc:exclude-mapping path="/shopadmin/registershop"/>
+            <mvc:exclude-mapping path="/shopadmin/shopoperation"/>
+            <!-- shopmanage page-->
+            <mvc:exclude-mapping path="/shopadmin/shopmanagement"/>
+            <mvc:exclude-mapping path="/shopadmin/getshopmanagementinfo"/>
+            <bean id="ShopPermissionInterceptor" class="com.melon.o2o.interceptor.shopadmin.ShopPermissionInterceptor"></bean>
+        </mvc:interceptor>
+
+    </mvc:interceptors>
 
     <!-- HandlerMapping 无需配置，SpringMVC可以默认启动，
         DefaultAnnotationHandlerMapping annotation-driven HandlerMapping -->
