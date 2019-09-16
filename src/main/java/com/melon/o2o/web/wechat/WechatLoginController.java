@@ -76,6 +76,7 @@ public class WechatLoginController {
                 log.debug("weixin login user:" + user.toString());
                 request.getSession().setAttribute("openId", openId);
                 auth = wechatAuthService.getWechatAuthByOpenId(openId);
+                log.debug("wexin login auth:"+ auth);
             } catch (IOException e) {
                 log.error("error in getUserAccessToken or getUserInfo or findByOpenId: "
                         + e.toString());
@@ -84,6 +85,7 @@ public class WechatLoginController {
         }
         if (auth == null) {
             PersonInfo personInfo = WeiXinUserUtil.getPersonInfoFromRequest(user);
+            log.debug("wechatlogin/logincheck:personinfo : " + personInfo.getName());
             auth = new WechatAuth();
             auth.setOpenId(openId);
             if (FRONTEND.equals(roleType)) {
@@ -93,12 +95,16 @@ public class WechatLoginController {
             }
             auth.setPersonInfo(personInfo);
             WechatAuthExecution wechatAuthExecution = wechatAuthService.register(auth);
+            log.debug("wechatlogin/logincheck:personinfo-getStateInfo : " + wechatAuthExecution.getStateInfo());
             if (wechatAuthExecution.getState() != WechatAuthStateEnum.SUCCESS.getState()) {
                 return null;
             } else {
                 personInfo = personInfoService.getPersonInfoById(auth.getPersonInfo().getUserId());
                 request.getSession().setAttribute("user", personInfo);
             }
+        }else {
+            PersonInfo personInfo = personInfoService.getPersonInfoById(auth.getPersonInfo().getUserId());
+            request.getSession().setAttribute("user", personInfo);
         }
         if (FRONTEND.equals(roleType)) {
             return "frontend/index";
