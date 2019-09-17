@@ -43,7 +43,7 @@ public class ImageUtil {
 
         try {
             Thumbnails.of(thumbnail.getImage()).size(200, 200)
-                    .watermark(Positions.BOTTOM_RIGHT, ImageIO.read(new File(basePath + "/watermark.jpg")), 0.25f)
+                    .watermark(Positions.BOTTOM_RIGHT, ImageIO.read(new File(basePath + "/water.png")), 0.25f)
                     .outputQuality(0.8f)
                     .toFile(dest);
         } catch (IOException e) {
@@ -66,7 +66,7 @@ public class ImageUtil {
 
         try {
             Thumbnails.of(thumbnail.getImage()).size(337,640)
-                    .watermark(Positions.BOTTOM_RIGHT, ImageIO.read(new File(basePath + "/watermark.jpg")), 0.25f)
+                    .watermark(Positions.BOTTOM_RIGHT, ImageIO.read(new File(basePath + "/water.png")), 0.25f)
                     .outputQuality(0.8f)
                     .toFile(dest);
         } catch (IOException e) {
