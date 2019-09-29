@@ -24,6 +24,7 @@
         <constructor-arg index="0" ref="jedisPoolConfig" />
         <constructor-arg index="1" value="${redis.hostname}" />
         <constructor-arg index="2" value="${redis.port}" type="int" />
+        <constructor-arg index="3" value="${redis.password}" type="java.lang.String" />
     </bean>
     <bean id="jedisKeys" class="com.melon.o2o.cache.JedisUtil$Keys"
           scope="singleton">

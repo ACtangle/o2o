@@ -4,7 +4,7 @@ import org.springframework.beans.factory.config.PropertyPlaceholderConfigurer;
 
 public class EncryptPropertyPlaceholderConfigurer extends PropertyPlaceholderConfigurer {
 
-    private String[] encryptPropNames = {"jdbc.master.username", "jdbc.master.password", "jdbc.slave.username", "jdbc.slave.password"};
+    private String[] encryptPropNames = {"jdbc.master.username", "jdbc.master.password", "jdbc.slave.username", "jdbc.slave.password","redis.password"};
 
     @Override
     protected String convertProperty(String propertyName, String propertyValue) {

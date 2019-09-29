@@ -64,6 +64,7 @@ public class DESUtils {
 		System.out.println(getEncryptString("root"));
 		System.out.println(getEncryptString("wxd7f6c5b8899fba83"));
 		System.out.println(getEncryptString("665ae80dba31fc91ab6191e7da4d676d"));
+        System.out.println(getEncryptString("melon"));
 	}
 
 }
